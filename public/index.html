@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pharma Job Alert — Igor Cernak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:    #2563eb;
+      --blue-lt: #eff6ff;
+      --green:   #16a34a;
+      --gray-50: #f9fafb;
+      --gray-100:#f3f4f6;
+      --gray-200:#e5e7eb;
+      --gray-400:#9ca3af;
+      --gray-600:#4b5563;
+      --gray-800:#1f2937;
+      --gray-900:#111827;
+      --radius:  8px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-900);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 20px 24px;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .header-title { display: flex; align-items: center; gap: 12px; }
+    .pill-icon {
+      width: 40px; height: 40px;
+      background: var(--blue);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    h1 { font-size: 20px; font-weight: 700; color: var(--gray-900); }
+    h1 span { font-weight: 400; color: var(--gray-600); }
+    .meta { margin-top: 4px; font-size: 13px; color: var(--gray-400); }
+
+    .stats { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat-num { font-size: 22px; font-weight: 700; color: var(--gray-900); }
+    .stat-label { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--gray-400); }
+
+    /* ── Controls ── */
+    .controls {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .search-row { display: flex; gap: 10px; }
+    input[type="search"] {
+      flex: 1;
+      padding: 10px 14px;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-family: inherit;
+      background: #fff;
+      outline: none;
+      transition: border-color .15s;
+    }
+    input[type="search"]:focus { border-color: var(--blue); }
+
+    .filters { display: flex; flex-wrap: wrap; gap: 6px; }
+    .filter-btn {
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--gray-200);
+      background: #fff;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+      color: var(--gray-600);
+      transition: all .15s;
+      white-space: nowrap;
+    }
+    .filter-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .filter-btn.active {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+      font-weight: 500;
+    }
+    .results-count { font-size: 13px; color: var(--gray-400); align-self: center; margin-left: auto; }
+
+    /* ── Job grid ── */
+    .grid {
+      max-width: 1100px;
+      margin: 0 auto 40px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: box-shadow .15s, border-color .15s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,.07); border-color: var(--gray-400); }
+
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--gray-900);
+      line-height: 1.35;
+      flex: 1;
+    }
+    .source-badge {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 3px 8px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .card-company { font-size: 13px; font-weight: 500; color: var(--gray-800); }
+    .card-location { font-size: 13px; color: var(--gray-400); }
+    .card-snippet { font-size: 12px; color: var(--gray-600); line-height: 1.45; }
+
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--gray-100);
+    }
+    .card-date { font-size: 12px; color: var(--gray-400); }
+    .apply-btn {
+      display: inline-block;
+      padding: 6px 14px;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .apply-btn:hover { background: #1d4ed8; }
+
+    /* ── Source badge colours ── */
+    .src-Pharmiweb       { background: #fef3c7; color: #92400e; }
+    .src-LinkedIn        { background: #dbeafe; color: #1e40af; }
+    .src-Indeed          { background: #fee2e2; color: #991b1b; }
+    .src-jobs\\.ch       { background: #d1fae5; color: #065f46; }
+    .src-Roche           { background: #ede9fe; color: #5b21b6; }
+    .src-Novartis        { background: #fce7f3; color: #9d174d; }
+    .src-Lonza           { background: #e0f2fe; color: #0c4a6e; }
+    .src-Sanofi          { background: #dcfce7; color: #14532d; }
+    .src-Bayer           { background: #fef9c3; color: #713f12; }
+
+    /* ── Empty / loading states ── */
+    .empty {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--gray-400);
+      font-size: 15px;
+    }
+    .spinner {
+      width: 32px; height: 32px;
+      border: 3px solid var(--gray-200);
+      border-top-color: var(--blue);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      margin: 0 auto 12px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 600px) {
+      .stats { display: none; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-title">
+      <div class="pill-icon">💊</div>
+      <div>
+        <h1>Pharma Job Alert <span>for Igor Cernak</span></h1>
+        <div class="meta" id="meta">Loading…</div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num" id="stat-total">—</div><div class="stat-label">Jobs</div></div>
+      <div class="stat"><div class="stat-num" id="stat-sources">—</div><div class="stat-label">Sources</div></div>
+      <div class="stat"><div class="stat-num" id="stat-companies">—</div><div class="stat-label">Companies</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="search-row">
+    <input type="search" id="search" placeholder="Search by title, company or location…" autocomplete="off" />
+    <span class="results-count" id="results-count"></span>
+  </div>
+  <div class="filters" id="filters"></div>
+</div>
+
+<div class="grid" id="grid">
+  <div class="empty"><div class="spinner"></div>Loading jobs…</div>
+</div>
+
+<script>
+  let ALL_JOBS = [];
+  let activeSource = 'All';
+
+  // ── Fetch data ─────────────────────────────────────────────────────────
+  fetch('jobs.json')
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => {
+      ALL_JOBS = data.jobs || [];
+      initPage(data);
+    })
+    .catch(() => {
+      document.getElementById('grid').innerHTML =
+        '<div class="empty">Could not load jobs.json — run the scraper first.</div>';
+    });
+
+  function initPage(data) {
+    // Header meta
+    const d = new Date(data.scraped_at);
+    document.getElementById('meta').textContent =
+      'Last updated: ' + d.toLocaleString('en-GB', { dateStyle:'long', timeStyle:'short' });
+
+    // Stats
+    const sources = [...new Set(ALL_JOBS.map(j => sourceName(j.source)))];
+    const companies = [...new Set(ALL_JOBS.map(j => j.company))];
+    document.getElementById('stat-total').textContent = ALL_JOBS.length;
+    document.getElementById('stat-sources').textContent = sources.length;
+    document.getElementById('stat-companies').textContent = companies.length;
+
+    // Source filter buttons
+    const filtersEl = document.getElementById('filters');
+    ['All', ...sources.sort()].forEach(src => {
+      const btn = document.createElement('button');
+      btn.className = 'filter-btn' + (src === 'All' ? ' active' : '');
+      btn.textContent = src === 'All' ? `All (${ALL_JOBS.length})` : src;
+      btn.dataset.source = src;
+      btn.addEventListener('click', () => {
+        activeSource = src;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        render();
+      });
+      filtersEl.appendChild(btn);
+    });
+
+    // Search
+    document.getElementById('search').addEventListener('input', render);
+
+    render();
+  }
+
+  // ── Render ─────────────────────────────────────────────────────────────
+  function render() {
+    const q = document.getElementById('search').value.trim().toLowerCase();
+    const jobs = ALL_JOBS.filter(j => {
+      if (activeSource !== 'All' && sourceName(j.source) !== activeSource) return false;
+      if (q) {
+        const hay = `${j.title} ${j.company} ${j.location}`.toLowerCase();
+        return hay.includes(q);
+      }
+      return true;
+    });
+
+    document.getElementById('results-count').textContent =
+      jobs.length === ALL_JOBS.length ? '' : `${jobs.length} of ${ALL_JOBS.length}`;
+
+    const grid = document.getElementById('grid');
+    if (jobs.length === 0) {
+      grid.innerHTML = '<div class="empty">No jobs match your filters.</div>';
+      return;
+    }
+
+    grid.innerHTML = jobs.map(job => {
+      const src = sourceName(job.source);
+      const srcClass = 'src-' + src.replace(/[^a-zA-Z0-9]/g, s => '\\' + s);
+      const posted = job.posted_at ? escHtml(job.posted_at) : '';
+      const snippet = job.description_snippet
+        ? `<div class="card-snippet">${escHtml(job.description_snippet)}</div>` : '';
+      return `
+        <div class="card">
+          <div class="card-top">
+            <div class="card-title">${escHtml(job.title)}</div>
+            <span class="source-badge ${srcClass}">${escHtml(src)}</span>
+          </div>
+          <div class="card-company">${escHtml(job.company)}</div>
+          <div class="card-location">📍 ${escHtml(job.location || '—')}</div>
+          ${snippet}
+          <div class="card-footer">
+            <span class="card-date">${posted}</span>
+            <a class="apply-btn" href="${escHtml(job.url)}" target="_blank" rel="noopener">Apply →</a>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  // Strip "(Careers)" suffix so filter chips stay short: "Roche" not "Roche (Careers)"
+  function sourceName(raw) {
+    return (raw || '').replace(/\s*\(Careers\)\s*$/, '').trim();
+  }
+
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+</script>
+</body>
+</html>

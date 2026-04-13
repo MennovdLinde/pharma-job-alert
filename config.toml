@@ -9,6 +9,11 @@
 # In GitHub Actions this file is cached between runs.
 db_path = "seen_jobs.db"
 
+# Write all scraped jobs to this JSON file after each run.
+# GitHub Actions commits this file → Vercel auto-deploys the updated web page.
+[output]
+json_path = "public/jobs.json"
+
 # ----------------------------------------------------------
 # Email delivery
 # ----------------------------------------------------------

@@ -7,6 +7,15 @@ pub struct Config {
     pub email: EmailConfig,
     pub search: SearchConfig,
     pub db_path: Option<String>,
+    #[serde(default)]
+    pub output: OutputConfig,
+}
+
+#[derive(Debug, Deserialize, Clone, Default)]
+pub struct OutputConfig {
+    /// Write all scraped jobs to this JSON file after each run.
+    /// GitHub Actions commits this file so Vercel can serve it.
+    pub json_path: Option<String>,
 }
 
 #[derive(Debug, Deserialize, Clone)]
