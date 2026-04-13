@@ -55,35 +55,29 @@ fn parse_jobs_ch(html: &str) -> Vec<JobListing> {
     let document = Html::parse_document(html);
     let mut jobs = Vec::new();
 
-    let card_sel = Selector::parse(
-        "article[data-cy='vacancy-item'], \
-         div[class*='JobCard'], \
-         li[class*='vacancy']",
-    )
-    .unwrap();
-    let title_sel = Selector::parse("h2, h3, [class*='jobTitle'], [data-cy='vacancy-title']").unwrap();
-    let company_sel =
-        Selector::parse("[class*='companyName'], [data-cy='vacancy-company'], span[class*='company']")
-            .unwrap();
-    let location_sel =
-        Selector::parse("[class*='location'], [data-cy='vacancy-location'], span[class*='city']").unwrap();
-    let link_sel = Selector::parse("a[href*='/vacancies/']").unwrap();
-    let date_sel = Selector::parse("time, [class*='date'], [data-cy='publication-date']").unwrap();
+    // Selectors verified against live jobs.ch HTML (April 2026, Next.js SSR)
+    // data-cy attributes are stable; utility CSS class names are not.
+    let card_sel    = Selector::parse(r#"[data-cy="serp-item"]"#).unwrap();
+    let link_sel    = Selector::parse(r#"[data-cy="job-link"]"#).unwrap();
+    let company_sel = Selector::parse("p.fw_bold").unwrap();
+    let loc_sel     = Selector::parse("p.mb_s12").unwrap();
+    let date_sel    = Selector::parse("p.white-space_nowrap").unwrap();
 
     for card in document.select(&card_sel) {
-        let title = card
-            .select(&title_sel)
-            .next()
-            .map(|el| el.text().collect::<String>().trim().to_string())
-            .unwrap_or_default();
+        let link_el = card.select(&link_sel).next();
+
+        // The <a data-cy="job-link"> carries title= with the exact job title
+        let title = link_el
+            .and_then(|el| el.value().attr("title"))
+            .unwrap_or("")
+            .trim()
+            .to_string();
 
         if title.is_empty() {
             continue;
         }
 
-        let href = card
-            .select(&link_sel)
-            .next()
+        let href = link_el
             .and_then(|el| el.value().attr("href"))
             .unwrap_or("");
 
@@ -99,8 +93,9 @@ fn parse_jobs_ch(html: &str) -> Vec<JobListing> {
             .map(|el| el.text().collect::<String>().trim().to_string())
             .unwrap_or_else(|| "Unknown".to_string());
 
+        // First p.mb_s12 inside the card is the location
         let location = card
-            .select(&location_sel)
+            .select(&loc_sel)
             .next()
             .map(|el| el.text().collect::<String>().trim().to_string())
             .unwrap_or_default();
@@ -108,12 +103,7 @@ fn parse_jobs_ch(html: &str) -> Vec<JobListing> {
         let posted_at = card
             .select(&date_sel)
             .next()
-            .and_then(|el| {
-                el.value()
-                    .attr("datetime")
-                    .map(|s| s.to_string())
-                    .or_else(|| Some(el.text().collect::<String>().trim().to_string()))
-            });
+            .map(|el| el.text().collect::<String>().trim().to_string());
 
         jobs.push(JobListing {
             id: make_id("jobs_ch", &url),

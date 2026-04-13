@@ -14,6 +14,7 @@ impl Scraper for IndeedScraper {
     async fn scrape(&self, keywords: &[String], location: Option<&str>) -> Result<Vec<JobListing>> {
         let client = build_client()?;
         let mut all_jobs = Vec::new();
+        tracing::info!("Indeed: starting ({} keywords)", keywords.len());
 
         for keyword in keywords {
             let loc = location.unwrap_or("Switzerland");
@@ -34,12 +35,20 @@ impl Scraper for IndeedScraper {
                 }
             };
 
-            if !resp.status().is_success() {
-                tracing::warn!("Indeed returned {} for '{keyword}'", resp.status());
+            let status = resp.status();
+            if !status.is_success() {
+                tracing::warn!("Indeed returned {status} for '{keyword}'");
                 continue;
             }
 
             let html = resp.text().await?;
+            // Detect Cloudflare/CAPTCHA blocks (200 but no job cards)
+            if html.contains("cf-browser-verification") || html.contains("Please enable JS") {
+                tracing::warn!("Indeed: bot-detection page for '{keyword}' — skipping");
+                continue;
+            }
+            tracing::info!("Indeed: got {status} for '{keyword}', page len={}", html.len());
+
             let jobs = parse_indeed(&html);
             tracing::info!("Indeed: {} jobs for '{keyword}'", jobs.len());
             all_jobs.extend(jobs);

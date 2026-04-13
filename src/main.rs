@@ -28,6 +28,12 @@ async fn main() -> Result<()> {
         )
         .init();
 
+    let args: Vec<String> = std::env::args().collect();
+    let dry_run = args.contains(&"--dry-run".to_string());
+    if dry_run {
+        info!("DRY RUN mode — results printed to stdout, no email sent, no DB writes");
+    }
+
     let config_path = std::env::var("CONFIG_PATH").unwrap_or_else(|_| "config.toml".to_string());
     info!("Loading config from {config_path}");
     let config = config::Config::load(&config_path)?;
@@ -99,7 +105,13 @@ async fn main() -> Result<()> {
     info!("{} genuinely new jobs found", new_jobs.len());
 
     if new_jobs.is_empty() {
-        info!("No new jobs -- no email sent.");
+        info!("No new jobs.");
+        return Ok(());
+    }
+
+    if dry_run {
+        println!("\n{}", serde_json::to_string_pretty(&new_jobs)?);
+        info!("Dry run complete — {} jobs found.", new_jobs.len());
         return Ok(());
     }
 

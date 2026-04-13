@@ -61,28 +61,25 @@ location = "Basel, Switzerland"
 
 [[search.workday_companies]]
 company_id   = "roche"
-portal       = "Roche-Careers"
+portal       = "roche-ext"
 display_name = "Roche"
 
 [[search.workday_companies]]
 company_id   = "novartis"
-portal       = "novartis"
+portal       = "Novartis_Careers"
 display_name = "Novartis"
 
 [[search.workday_companies]]
 company_id   = "lonza"
-portal       = "lonza-careers"
+portal       = "Lonza_Careers"
 display_name = "Lonza"
 
 [[search.workday_companies]]
 company_id   = "sanofi"
-portal       = "Sanofi"
+portal       = "SanofiCareers"
 display_name = "Sanofi"
 
-[[search.workday_companies]]
-company_id   = "ucb"
-portal       = "UCBCareers"
-display_name = "UCB Pharma"
+# UCB does not use Workday — they use careers.ucb.com (separate scraper)
 
 # Add more companies here — no code changes required:
 # [[search.workday_companies]]

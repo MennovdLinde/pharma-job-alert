@@ -52,16 +52,18 @@ fn parse_pharmiweb(html: &str, _keyword: &str) -> Vec<JobListing> {
     let document = Html::parse_document(html);
     let mut jobs = Vec::new();
 
-    // Pharmiweb job card selector — update if site HTML changes
-    let card_sel = Selector::parse("div.job-search-result, article.job-listing, li.job-item").unwrap();
-    let title_sel = Selector::parse("h2 a, h3 a, .job-title a, a.job-title").unwrap();
-    let company_sel = Selector::parse(".company-name, .employer, span.company").unwrap();
-    let location_sel = Selector::parse(".location, span.location, .job-location").unwrap();
-    let date_sel = Selector::parse(".date, .posted-date, time").unwrap();
+    // Selectors verified against live pharmiweb.jobs HTML (April 2026)
+    let card_sel     = Selector::parse("li.lister__item").unwrap();
+    let title_sel    = Selector::parse("h3.lister__header a span").unwrap();
+    let link_sel     = Selector::parse("h3.lister__header a.js-clickable-area-link").unwrap();
+    let company_sel  = Selector::parse("li.lister__meta-item--recruiter").unwrap();
+    let location_sel = Selector::parse("li.lister__meta-item--location").unwrap();
+    let date_sel     = Selector::parse("li.job-actions__action.pipe").unwrap();
 
     for card in document.select(&card_sel) {
-        let title_el = card.select(&title_sel).next();
-        let title = title_el
+        let title = card
+            .select(&title_sel)
+            .next()
             .map(|el| el.text().collect::<String>().trim().to_string())
             .unwrap_or_default();
 
@@ -69,12 +71,17 @@ fn parse_pharmiweb(html: &str, _keyword: &str) -> Vec<JobListing> {
             continue;
         }
 
-        let href = title_el
+        // href contains leading/trailing whitespace — must trim
+        let href = card
+            .select(&link_sel)
+            .next()
             .and_then(|el| el.value().attr("href"))
-            .unwrap_or("");
+            .unwrap_or("")
+            .trim()
+            .to_string();
 
         let url = if href.starts_with("http") {
-            href.to_string()
+            href
         } else {
             format!("https://www.pharmiweb.jobs{href}")
         };
