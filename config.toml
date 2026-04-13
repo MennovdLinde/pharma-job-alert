@@ -48,11 +48,15 @@ title_contains_any = [
     "clinical project",
     "clinical research associate",
     "clinical monitor",
+    "clinical lead",
     "study manager",
     "study director",
+    "study operation",
     "trial manager",
     "trial lead",
+    "trial leader",
     "trial director",
+    "trial executive",
     "global study",
     "global trial",
     "site operation",
@@ -112,14 +116,15 @@ title_excludes_any = [
 # Keywords Igor's roles would appear under on job boards.
 # Each entry triggers a separate search on every board.
 keywords = [
-    "clinical operations Basel",
-    "global study manager Switzerland",
-    "clinical trial manager Basel",
-    "clinical project manager pharma Switzerland",
-    "study director clinical Basel",
-    "clinical operations director pharma",
-    "GCP compliance manager Switzerland",
-    "CRO outsourcing manager pharma",
+    "clinical operations",
+    "global study manager",
+    "clinical trial manager",
+    "clinical project manager",
+    "study director clinical",
+    "clinical trial lead",
+    "site operations manager",
+    "GCP compliance manager",
+    "CRO outsourcing manager",
 ]
 
 # Location filter sent to all scrapers
@@ -154,10 +159,26 @@ company_id   = "sanofi"
 portal       = "SanofiCareers"
 display_name = "Sanofi"
 
-# UCB does not use Workday — they use careers.ucb.com (separate scraper)
+# J&J / Janssen — Allschwil is right next to Basel (uses wd5, not wd3)
+[[search.workday_companies]]
+company_id   = "jj"
+portal       = "JJ"
+wd_instance  = "wd5"
+display_name = "Johnson & Johnson"
+
+[[search.workday_companies]]
+company_id   = "astrazeneca"
+portal       = "Careers"
+display_name = "AstraZeneca"
+
+[[search.workday_companies]]
+company_id   = "takeda"
+portal       = "External"
+display_name = "Takeda"
 
 # Add more companies here — no code changes required:
 # [[search.workday_companies]]
-# company_id   = "abbvie"
-# portal       = "abbvie"
-# display_name = "AbbVie"
+# company_id   = "abbott"
+# portal       = "abbottcareers"
+# wd_instance  = "wd5"
+# display_name = "Abbott"

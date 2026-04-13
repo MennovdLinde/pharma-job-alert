@@ -15,6 +15,7 @@ use scrapers::{
     jobs_ch::JobsChScraper,
     workday::WorkdayScraper,
     bayer::BayerScraper,
+    biospace::BiospaceScraper,
 };
 use std::collections::HashSet;
 use tokio::task::JoinSet;
@@ -57,6 +58,7 @@ async fn main() -> Result<()> {
     // To add a new scraper: append one line here.
     let mut scrapers: Vec<Box<dyn Scraper + Send + Sync + 'static>> = vec![
         Box::new(PharmiwebScraper),
+        Box::new(BiospaceScraper),
         Box::new(LinkedInScraper),
         Box::new(IndeedScraper),
         Box::new(JobsChScraper),
@@ -66,9 +68,10 @@ async fn main() -> Result<()> {
     // Workday companies loaded from config — add companies in config.toml, zero code changes needed
     for company in &config.search.workday_companies {
         scrapers.push(Box::new(WorkdayScraper {
-            company_id: company.company_id.clone(),
-            portal: company.portal.clone(),
+            company_id:   company.company_id.clone(),
+            portal:       company.portal.clone(),
             display_name: company.display_name.clone(),
+            wd_instance:  company.wd_instance.clone(),
         }));
     }
 

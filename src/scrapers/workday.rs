@@ -1,20 +1,22 @@
 /// Generic scraper for Workday-hosted career portals.
 ///
-/// Most large pharma companies use Workday. The JSON search API is the same
-/// across all of them — only the subdomain and portal path differ.
+/// The JSON search API is identical across all Workday instances —
+/// only the subdomain, Workday instance version, and portal path differ.
 ///
-/// How to find the correct values for a new company:
-///   1. Go to their careers page and search for a job.
+/// How to find values for a new company:
+///   1. Visit their careers page and search for any job.
 ///   2. The URL will look like:
 ///        https://{company_id}.wd3.myworkdayjobs.com/{portal}/jobs?q=...
-///   3. Use those two values in config.toml.
+///   3. Some companies use wd5 instead of wd3 (e.g. J&J, Abbott).
 ///
-/// Confirmed portals (as of early 2026):
-///   Roche:   company_id="roche",    portal="Roche-Careers"
-///   Novartis: company_id="novartis", portal="novartis"
-///   Lonza:   company_id="lonza",    portal="lonza-careers"
-///   Sanofi:  company_id="sanofi",   portal="Sanofi"
-///   UCB:     company_id="ucb",      portal="UCBCareers"
+/// Confirmed portals (verified April 2026):
+///   Roche:      company_id="roche",         portal="roche-ext",        wd_instance="wd3"
+///   Novartis:   company_id="novartis",       portal="Novartis_Careers", wd_instance="wd3"
+///   Lonza:      company_id="lonza",          portal="Lonza_Careers",    wd_instance="wd3"
+///   Sanofi:     company_id="sanofi",         portal="SanofiCareers",    wd_instance="wd3"
+///   J&J:        company_id="jj",             portal="JJ",               wd_instance="wd5"
+///   AstraZeneca: company_id="astrazeneca",   portal="Careers",          wd_instance="wd3"
+///   Takeda:     company_id="takeda",         portal="External",         wd_instance="wd3"
 use crate::models::JobListing;
 use crate::scrapers::{Scraper, build_client, make_id};
 use anyhow::Result;
@@ -22,10 +24,39 @@ use async_trait::async_trait;
 use chrono::Utc;
 use serde::Deserialize;
 
+/// Location words to strip from search text before sending to Workday.
+/// Workday searches job titles/descriptions — location words reduce recall
+/// without improving precision (the portal already scopes to that company).
+const LOCATION_WORDS: &[&str] = &[
+    "Basel", "Switzerland", "Zurich", "Zürich", "Zug", "Geneva", "Genf",
+    "Allschwil", "pharma",
+];
+
 pub struct WorkdayScraper {
     pub company_id: String,
     pub portal: String,
     pub display_name: String,
+    /// Workday instance version. Most companies use "wd3"; J&J and Abbott use "wd5".
+    pub wd_instance: String,
+}
+
+fn strip_location_words(keyword: &str) -> String {
+    let mut result = keyword.to_string();
+    for word in LOCATION_WORDS {
+        // Replace whole-word occurrences, case-insensitive
+        let lower_result = result.to_lowercase();
+        let lower_word = word.to_lowercase();
+        if let Some(pos) = lower_result.find(&lower_word) {
+            // Check it's a word boundary (space before/after or start/end)
+            let before_ok = pos == 0 || result.as_bytes()[pos - 1] == b' ';
+            let after_pos = pos + word.len();
+            let after_ok = after_pos >= result.len() || result.as_bytes()[after_pos] == b' ';
+            if before_ok && after_ok {
+                result = format!("{}{}", result[..pos].trim_end(), result[after_pos..].trim_start());
+            }
+        }
+    }
+    result.trim().to_string()
 }
 
 // ── Workday JSON response types ────────────────────────────────────────────
@@ -61,22 +92,25 @@ impl Scraper for WorkdayScraper {
         let mut all_jobs = Vec::new();
 
         let api_url = format!(
-            "https://{id}.wd3.myworkdayjobs.com/wday/cxs/{id}/{portal}/jobs",
-            id = self.company_id,
+            "https://{id}.{wdi}.myworkdayjobs.com/wday/cxs/{id}/{portal}/jobs",
+            id  = self.company_id,
+            wdi = self.wd_instance,
+            portal = self.portal,
+        );
+        let apply_base = format!(
+            "https://{id}.{wdi}.myworkdayjobs.com/{portal}",
+            id  = self.company_id,
+            wdi = self.wd_instance,
             portal = self.portal,
         );
 
         for keyword in keywords {
-            // Optionally append location to search text — Workday has no separate location field
-            // in the free-text search; filtering by location ID requires a separate lookup.
-            let search_text = match location {
-                Some(loc) if !keyword.to_lowercase().contains("basel")
-                          && !keyword.to_lowercase().contains("switzerland") =>
-                {
-                    format!("{keyword} {loc}")
-                }
-                _ => keyword.clone(),
-            };
+            // Strip location words — Workday searches job titles/descriptions so
+            // "clinical operations Basel" → "clinical operations" gives far more results.
+            let search_text = strip_location_words(keyword);
+            if search_text.is_empty() {
+                continue;
+            }
 
             let body = serde_json::json!({
                 "appliedFacets": {},
@@ -119,12 +153,7 @@ impl Scraper for WorkdayScraper {
             tracing::info!("{}: {} results for '{}'", self.display_name, count, keyword);
 
             for job in data.job_postings {
-                let url = format!(
-                    "https://{id}.wd3.myworkdayjobs.com/{portal}{path}",
-                    id = self.company_id,
-                    portal = self.portal,
-                    path = job.external_path,
-                );
+                let url = format!("{apply_base}{path}", path = job.external_path);
 
                 let snippet = if job.bullet_fields.is_empty() {
                     None

@@ -87,10 +87,17 @@ pub struct SearchConfig {
 pub struct WorkdayCompany {
     /// Workday subdomain, e.g. "roche"
     pub company_id: String,
-    /// Portal path segment, e.g. "Roche-Careers"
+    /// Portal path segment, e.g. "roche-ext"
     pub portal: String,
-    /// Human-readable label used in the email digest
+    /// Human-readable label shown on the web page
     pub display_name: String,
+    /// Workday instance version — most companies use "wd3", J&J/Abbott use "wd5"
+    #[serde(default = "default_wd_instance")]
+    pub wd_instance: String,
+}
+
+fn default_wd_instance() -> String {
+    "wd3".to_string()
 }
 
 impl Config {

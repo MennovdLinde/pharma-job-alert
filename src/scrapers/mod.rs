@@ -4,6 +4,7 @@ pub mod indeed;
 pub mod jobs_ch;
 pub mod workday;
 pub mod bayer;
+pub mod biospace;
 
 use crate::models::JobListing;
 use anyhow::Result;
