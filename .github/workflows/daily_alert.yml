@@ -1,0 +1,47 @@
+name: Daily Pharma Job Alert
+
+on:
+  # Runs at 08:00 Zürich time (UTC+2 in summer = 06:00 UTC)
+  schedule:
+    - cron: "0 6 * * *"
+  # Allow manual runs from the GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  scrape-and-alert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Cache the Rust build artifacts to keep subsequent runs fast (~2 min → ~30 sec)
+      - name: Cache Rust build
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      # Cache the SQLite dedup database between runs so we never re-alert
+      - name: Restore dedup database
+        uses: actions/cache@v4
+        with:
+          path: seen_jobs.db
+          key: seen-jobs-db-${{ github.run_id }}
+          restore-keys: seen-jobs-db-
+
+      - name: Build (release)
+        run: cargo build --release
+
+      - name: Run scraper
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
+          RUST_LOG: info
+        run: ./target/release/pharma-job-alert
