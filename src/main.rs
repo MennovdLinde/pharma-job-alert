@@ -98,6 +98,14 @@ async fn main() -> Result<()> {
     let mut seen_this_run: HashSet<String> = HashSet::new();
     all_jobs.retain(|j| seen_this_run.insert(j.id.clone()));
 
+    // ── Relevance filter ──────────────────────────────────────────────────
+    let before = all_jobs.len();
+    all_jobs.retain(|j| config.filter.is_relevant(&j.title));
+    let dropped = before - all_jobs.len();
+    if dropped > 0 {
+        info!("Relevance filter removed {dropped} irrelevant jobs ({} remaining)", all_jobs.len());
+    }
+
     // ── Write all jobs to JSON for the web page ───────────────────────────
     // This happens on every run so Vercel always has fresh data.
     // It writes ALL deduplicated jobs, not just "new" ones.

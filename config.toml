@@ -36,6 +36,76 @@ to_address      = "igor.cernak@gmail.com"   # Igor's email
 subject_prefix  = "[PharmaAlert]"
 
 # ----------------------------------------------------------
+# Relevance filter — applied after scraping, before jobs.json is written.
+# Jobs that don't match are silently dropped.
+# ----------------------------------------------------------
+[filter]
+# Title must contain at least one of these (case-insensitive OR logic).
+# Based on Igor's background: clinical ops, study management, trial execution.
+title_contains_any = [
+    "clinical trial",
+    "clinical operation",
+    "clinical project",
+    "clinical research associate",
+    "clinical monitor",
+    "study manager",
+    "study director",
+    "trial manager",
+    "trial lead",
+    "trial director",
+    "global study",
+    "global trial",
+    "site operation",
+    "site manager",
+    "site partnership",
+    "vendor manager",
+    "cro manager",
+    "gcp",
+    "outsourcing manager",
+    "r&d outsourc",
+]
+
+# Title must NOT contain any of these (case-insensitive).
+# Catches noise that slips through the keyword searches.
+title_excludes_any = [
+    "ict",
+    "biostatistic",
+    "statistician",
+    "biomarker",
+    "pharmacokinet",
+    "pharmacologist",
+    "manufacturing",
+    "msat",
+    "lab technician",
+    "lab tech",
+    " engineer",
+    "scientist",
+    "medical affair",
+    "medical director",
+    "medical science liaison",
+    "regulatory submission",
+    "regulatory strateg",
+    "accountant",
+    "controller",
+    "intern",
+    "cleaning",
+    "logistik",
+    "logistics specialist",
+    "it business analyst",
+    "software",
+    "developer",
+    "data science",
+    "data analyst",
+    "automation",
+    "validation engineer",
+    "facilities",
+    "procurement",
+    "market access",
+    "sales",
+    "key account",
+]
+
+# ----------------------------------------------------------
 # Search parameters
 # ----------------------------------------------------------
 [search]
@@ -45,11 +115,11 @@ keywords = [
     "clinical operations Basel",
     "global study manager Switzerland",
     "clinical trial manager Basel",
-    "CRO oversight Switzerland",
+    "clinical project manager pharma Switzerland",
     "study director clinical Basel",
     "clinical operations director pharma",
-    "GCP compliance clinical Switzerland",
-    "vendor management clinical trials",
+    "GCP compliance manager Switzerland",
+    "CRO outsourcing manager pharma",
 ]
 
 # Location filter sent to all scrapers

@@ -9,6 +9,44 @@ pub struct Config {
     pub db_path: Option<String>,
     #[serde(default)]
     pub output: OutputConfig,
+    #[serde(default)]
+    pub filter: FilterConfig,
+}
+
+/// Relevance filter applied to every scraped job before it reaches jobs.json.
+#[derive(Debug, Deserialize, Clone, Default)]
+pub struct FilterConfig {
+    /// At least one of these strings must appear in the job title (case-insensitive).
+    /// Leave empty to allow all titles through.
+    #[serde(default)]
+    pub title_contains_any: Vec<String>,
+
+    /// If any of these strings appear in the job title the job is dropped (case-insensitive).
+    #[serde(default)]
+    pub title_excludes_any: Vec<String>,
+}
+
+impl FilterConfig {
+    pub fn is_relevant(&self, title: &str) -> bool {
+        let lower = title.to_lowercase();
+
+        // Blocklist check — drop if any excluded term is found
+        for term in &self.title_excludes_any {
+            if lower.contains(&term.to_lowercase()) {
+                return false;
+            }
+        }
+
+        // Allowlist check — must match at least one required term (if list is non-empty)
+        if !self.title_contains_any.is_empty() {
+            return self
+                .title_contains_any
+                .iter()
+                .any(|t| lower.contains(&t.to_lowercase()));
+        }
+
+        true
+    }
 }
 
 #[derive(Debug, Deserialize, Clone, Default)]
