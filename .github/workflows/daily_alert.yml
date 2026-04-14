@@ -46,6 +46,8 @@ jobs:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           RUST_LOG: info
+        # continue-on-error so a bad SendGrid key never blocks the jobs.json commit
+        continue-on-error: true
         run: ./target/release/pharma-job-alert
 
       # Commit updated jobs.json so Vercel redeploys the web page automatically.
