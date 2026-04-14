@@ -5,35 +5,10 @@
 # environment variables — see comments per field.
 # ============================================================
 
-# Path to the SQLite deduplication database.
-# In GitHub Actions this file is cached between runs.
-db_path = "seen_jobs.db"
-
 # Write all scraped jobs to this JSON file after each run.
 # GitHub Actions commits this file → Vercel auto-deploys the updated web page.
 [output]
 json_path = "public/jobs.json"
-
-# ----------------------------------------------------------
-# Email delivery
-# ----------------------------------------------------------
-[email]
-# Option A — SendGrid (recommended, free up to 100 emails/day)
-# Set the real key via the SENDGRID_API_KEY environment variable
-# or replace the placeholder below.
-sendgrid_api_key = ""          # or set env var SENDGRID_API_KEY
-
-# Option B — plain SMTP (e.g. Gmail app password)
-# Leave smtp_host empty to use SendGrid instead.
-smtp_host     = ""             # e.g. "smtp.gmail.com"
-smtp_port     = 587
-smtp_username = ""             # e.g. "you@gmail.com"
-smtp_password = ""             # or set env var SMTP_PASSWORD
-
-# Sender and recipient
-from_address    = "alerts@yourdomain.com"
-to_address      = "igor.cernak@gmail.com"   # Igor's email
-subject_prefix  = "[PharmaAlert]"
 
 # ----------------------------------------------------------
 # Relevance filter — applied after scraping, before jobs.json is written.

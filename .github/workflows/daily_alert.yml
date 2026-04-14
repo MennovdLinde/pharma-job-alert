@@ -30,24 +30,12 @@ jobs:
       - name: Install Rust stable
         uses: dtolnay/rust-toolchain@stable
 
-      # Cache the SQLite dedup database between runs so we never re-alert
-      - name: Restore dedup database
-        uses: actions/cache@v4
-        with:
-          path: seen_jobs.db
-          key: seen-jobs-db-${{ github.run_id }}
-          restore-keys: seen-jobs-db-
-
       - name: Build (release)
         run: cargo build --release
 
       - name: Run scraper
         env:
-          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-          ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           RUST_LOG: info
-        # continue-on-error so a bad SendGrid key never blocks the jobs.json commit
-        continue-on-error: true
         run: ./target/release/pharma-job-alert
 
       # Commit updated jobs.json so Vercel redeploys the web page automatically.
