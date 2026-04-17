@@ -78,20 +78,8 @@ async fn main() -> Result<()> {
     all_jobs.retain(|j| seen_this_run.insert(j.id.clone()));
 
     // ── Relevance filter ──────────────────────────────────────────────────
-    // Company-direct scrapers (Workday portals, Bayer, CSL Vifor): title filter only —
-    // the source domain already guarantees a pharma company, so location is trusted.
-    // General boards (Pharmiweb, jobs.ch): full title + location filter.
     let before = all_jobs.len();
-    all_jobs.retain(|j| {
-        let company_direct = j.source.ends_with("(Careers)")
-            || j.source == "Bayer"
-            || j.source == "CSL Vifor";
-        if company_direct {
-            config.filter.is_title_relevant(&j.title)
-        } else {
-            config.filter.is_relevant(&j.title, &j.location)
-        }
-    });
+    all_jobs.retain(|j| config.filter.is_relevant(&j.title, &j.location));
     let dropped = before - all_jobs.len();
     if dropped > 0 {
         info!("Relevance filter removed {dropped} irrelevant jobs ({} remaining)", all_jobs.len());

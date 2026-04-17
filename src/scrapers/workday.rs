@@ -112,11 +112,14 @@ impl Scraper for WorkdayScraper {
                 continue;
             }
 
+            // locationSearchText tells Workday to pre-filter to Swiss jobs,
+            // so all 20 returned slots are Swiss rather than 1-in-20.
             let body = serde_json::json!({
                 "appliedFacets": {},
                 "limit": 20,
                 "offset": 0,
                 "searchText": search_text,
+                "locationSearchText": "Switzerland",
             });
 
             tracing::info!("{}: searching '{}'", self.display_name, keyword);

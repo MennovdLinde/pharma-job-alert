@@ -30,12 +30,6 @@ pub struct FilterConfig {
 }
 
 impl FilterConfig {
-    /// Title-only check — use for company-direct scrapers (Workday, Bayer, CSL Vifor)
-    /// where the source domain already guarantees a pharma company.
-    pub fn is_title_relevant(&self, title: &str) -> bool {
-        self.is_relevant(title, "switzerland") // pass dummy Swiss location
-    }
-
     pub fn is_relevant(&self, title: &str, location: &str) -> bool {
         let lower_title = title.to_lowercase();
 
