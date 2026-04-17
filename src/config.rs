@@ -79,6 +79,9 @@ pub struct SearchConfig {
     /// Workday-hosted company career portals to search.
     #[serde(default)]
     pub workday_companies: Vec<WorkdayCompany>,
+    /// SmartRecruiters-hosted company career portals to search.
+    #[serde(default)]
+    pub smartrecruiters_companies: Vec<SmartRecruitersCompany>,
 }
 
 #[derive(Debug, Deserialize, Clone)]
@@ -96,6 +99,14 @@ pub struct WorkdayCompany {
 
 fn default_wd_instance() -> String {
     "wd3".to_string()
+}
+
+#[derive(Debug, Deserialize, Clone)]
+pub struct SmartRecruitersCompany {
+    /// SmartRecruiters company identifier, e.g. "StraumannGroup1"
+    pub company_id: String,
+    /// Human-readable label shown on the web page
+    pub display_name: String,
 }
 
 impl Config {

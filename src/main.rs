@@ -12,6 +12,7 @@ use scrapers::{
     workday::WorkdayScraper,
     bayer::BayerScraper,
     csl_vifor::CslViforScraper,
+    smartrecruiters::SmartRecruitersScraper,
 };
 use std::collections::HashSet;
 use tokio::task::JoinSet;
@@ -49,6 +50,13 @@ async fn main() -> Result<()> {
             portal:       company.portal.clone(),
             display_name: company.display_name.clone(),
             wd_instance:  company.wd_instance.clone(),
+        }));
+    }
+
+    for company in &config.search.smartrecruiters_companies {
+        scrapers.push(Box::new(SmartRecruitersScraper {
+            company_id:   company.company_id.clone(),
+            display_name: company.display_name.clone(),
         }));
     }
 

@@ -18,10 +18,12 @@ json_path = "public/jobs.json"
 # Job location must contain at least one of these (case-insensitive).
 # Drops any job that isn't clearly based in Switzerland.
 location_contains_any = [
+    # Country names (all official languages + English)
     "switzerland",
     "schweiz",
     "suisse",
     "svizzera",
+    # Major cities
     "basel",
     "zürich",
     "zurich",
@@ -31,29 +33,54 @@ location_contains_any = [
     "zug",
     "bern",
     "lausanne",
+    "lugano",
+    "luzern",
+    "lucerne",
+    "biel",
+    "bienne",
+    "visp",
+    "baar",
+    # Pharma cluster suburbs / campuses
     "allschwil",
     "kaiseraugst",
     "rotkreuz",
-    "stein am rhein",
     "schlieren",
     "reinach",
     "bubendorf",
     "meyrin",
     "plan-les-ouates",
+    "stein am rhein",
+    "münchenbuchsee",
+    # Swiss cantons (appear in Workday location strings)
+    "aargau",
+    "basel-stadt",
+    "basel-land",
+    "basel-country",
+    "vaud",
+    "valais",
+    "wallis",
+    "ticino",
+    "zurich",
 ]
 
 # Title must contain at least one of these (case-insensitive OR logic).
 # Based on Igor's background: clinical ops, study management, trial execution.
 title_contains_any = [
+    # Clinical operations
     "clinical trial",
     "clinical operation",
     "clinical project",
+    "clinical program",
     "clinical research associate",
     "clinical monitor",
     "clinical lead",
+    "clinical quality",
+    # Study roles
     "study manager",
     "study director",
     "study operation",
+    "study lead",
+    # Trial roles
     "trial manager",
     "trial lead",
     "trial leader",
@@ -61,14 +88,16 @@ title_contains_any = [
     "trial executive",
     "global study",
     "global trial",
+    # Site & vendor management
     "site operation",
     "site manager",
     "site partnership",
     "vendor manager",
     "cro manager",
-    "gcp",
     "outsourcing manager",
     "r&d outsourc",
+    # Compliance
+    "gcp",
 ]
 
 # Title must NOT contain any of these (case-insensitive).
@@ -118,15 +147,26 @@ title_excludes_any = [
 # Keywords Igor's roles would appear under on job boards.
 # Each entry triggers a separate search on every board.
 keywords = [
+    # Core role titles
     "clinical operations",
-    "global study manager",
-    "clinical trial manager",
     "clinical project manager",
-    "study director clinical",
-    "clinical trial lead",
+    "clinical trial manager",
+    "clinical study manager",
+    "clinical program manager",
+    # Study/trial leadership
+    "global study manager",
+    "study director",
+    "study lead",
+    "trial lead",
+    "trial manager",
+    # Site & vendor operations
     "site operations manager",
-    "GCP compliance manager",
-    "CRO outsourcing manager",
+    "site manager clinical",
+    "vendor manager clinical",
+    "CRO outsourcing",
+    # Compliance
+    "GCP compliance",
+    "clinical quality",
 ]
 
 # Location filter sent to all scrapers
@@ -192,46 +232,35 @@ portal       = "BraccoCareers"
 wd_instance  = "wd103"
 display_name = "Bracco"
 
-# ── Additional Swiss pharma companies ────────────────────────────────────────
-# Sandoz — spun out of Novartis in Oct 2023, HQ Basel
-# Verify URL: https://sandoz.wd3.myworkdayjobs.com/sandoz/jobs
+# ── Additional Swiss pharma companies (Workday) ───────────────────────────────
+# Sandoz — spun out of Novartis Oct 2023, HQ Basel — wd103
 [[search.workday_companies]]
 company_id   = "sandoz"
-portal       = "sandoz"
+portal       = "Sandoz_Careers"
+wd_instance  = "wd103"
 display_name = "Sandoz"
 
-# Alcon — eye care, HQ Geneva; spun out of Novartis in 2019
-# Verify URL: https://alcon.wd5.myworkdayjobs.com/Careers/jobs
+# Alcon — eye care, HQ Geneva — wd5, portal verified April 2026
 [[search.workday_companies]]
 company_id   = "alcon"
-portal       = "Careers"
+portal       = "careers_alcon"
 wd_instance  = "wd5"
 display_name = "Alcon"
 
-# Ferring Pharmaceuticals — private, HQ Saint-Prex (VD), reproductive/GI medicines
-# Verify URL: https://ferring.wd3.myworkdayjobs.com/Ferring/jobs
+# Ferring Pharmaceuticals — private, HQ Saint-Prex VD
 [[search.workday_companies]]
 company_id   = "ferring"
 portal       = "Ferring"
 display_name = "Ferring Pharmaceuticals"
 
-# Idorsia — HQ Allschwil (next to Basel), CNS/rare disease focus
-# Verify URL: https://idorsia.wd3.myworkdayjobs.com/Idorsia_Careers/jobs
-[[search.workday_companies]]
-company_id   = "idorsia"
-portal       = "Idorsia_Careers"
-display_name = "Idorsia"
-
-# Galderma — dermatology, HQ Zug; IPO 2024
-# Verify URL: https://galderma.wd3.myworkdayjobs.com/Galderma_Careers/jobs
+# Galderma — dermatology, HQ Zug — portal verified April 2026
 [[search.workday_companies]]
 company_id   = "galderma"
-portal       = "Galderma_Careers"
+portal       = "External"
 display_name = "Galderma"
 
-# Straumann — dental/implants, HQ Basel; large R&D org
-# Verify URL: https://straumann.wd3.myworkdayjobs.com/Straumann/jobs
-[[search.workday_companies]]
-company_id   = "straumann"
-portal       = "Straumann"
+# ── SmartRecruiters companies ─────────────────────────────────────────────────
+# Straumann — dental/implants, HQ Basel — uses SmartRecruiters (not Workday)
+[[search.smartrecruiters_companies]]
+company_id   = "StraumannGroup1"
 display_name = "Straumann"
