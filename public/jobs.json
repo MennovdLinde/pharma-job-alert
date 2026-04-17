@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-16T06:48:45.163876874+00:00",
+  "scraped_at": "2026-04-17T06:50:00.436646789+00:00",
   "total": 119,
   "jobs": [
     {
@@ -9,8 +9,8 @@
       "location": "Turkey, Istanbul, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142676/manager-clinical-operations/",
       "source": "Pharmiweb",
-      "posted_at": "13 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533602533Z",
+      "posted_at": "14 days ago",
+      "scraped_at": "2026-04-17T06:49:44.662837970Z",
       "description_snippet": null
     },
     {
@@ -20,8 +20,8 @@
       "location": "Colombia, Bogota, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2141011/manager-of-clinical-operations/",
       "source": "Pharmiweb",
-      "posted_at": "7 days left",
-      "scraped_at": "2026-04-16T06:48:26.533615928Z",
+      "posted_at": "6 days left",
+      "scraped_at": "2026-04-17T06:49:44.662850984Z",
       "description_snippet": null
     },
     {
@@ -31,8 +31,8 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143994/senior-manager-clinical-operations/",
       "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533625857Z",
+      "posted_at": "4 days ago",
+      "scraped_at": "2026-04-17T06:49:44.662856234Z",
       "description_snippet": null
     },
     {
@@ -42,8 +42,30 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143686/senior-manager-clinical-operations/",
       "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533631427Z",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:44.662863678Z",
+      "description_snippet": null
+    },
+    {
+      "id": "f2629f10fc3cb4af",
+      "title": "Senior Clinical Operations Lead",
+      "company": "ICON Strategic Solutions",
+      "location": "United States, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144469/senior-clinical-operations-lead/",
+      "source": "Pharmiweb",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-17T06:49:44.662870741Z",
+      "description_snippet": null
+    },
+    {
+      "id": "44b87170cb23f5f5",
+      "title": "Manager, Clinical Operations",
+      "company": "ICON Plc",
+      "location": "Mexico, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144509/manager-clinical-operations/",
+      "source": "Pharmiweb",
+      "posted_at": null,
+      "scraped_at": "2026-04-17T06:49:44.662889566Z",
       "description_snippet": null
     },
     {
@@ -53,8 +75,8 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2140296/associate-director-regional-clinical-operations/",
       "source": "Pharmiweb",
-      "posted_at": "3 days left",
-      "scraped_at": "2026-04-16T06:48:26.533647256Z",
+      "posted_at": "2 days left",
+      "scraped_at": "2026-04-17T06:49:44.662895618Z",
       "description_snippet": null
     },
     {
@@ -64,19 +86,8 @@
       "location": "United States",
       "url": "https://www.pharmiweb.jobs/job/2142938/team-lead-site-operations-lead-clinical-research-coordinator-oncology-/",
       "source": "Pharmiweb",
-      "posted_at": "11 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533652857Z",
-      "description_snippet": null
-    },
-    {
-      "id": "bf15d48cf700976d",
-      "title": "Manager, Clinical Operation",
-      "company": "ICON Strategic Solutions",
-      "location": "Taiwan",
-      "url": "https://www.pharmiweb.jobs/job/2139895/manager-clinical-operation/",
-      "source": "Pharmiweb",
-      "posted_at": "1 day left",
-      "scraped_at": "2026-04-16T06:48:26.533658377Z",
+      "posted_at": "12 days ago",
+      "scraped_at": "2026-04-17T06:49:44.662904424Z",
       "description_snippet": null
     },
     {
@@ -86,8 +97,8 @@
       "location": "Netherlands, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142906/manager-clinical-operations-ii-clinical-study-manager-ii/",
       "source": "Pharmiweb",
-      "posted_at": "11 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533671061Z",
+      "posted_at": "12 days ago",
+      "scraped_at": "2026-04-17T06:49:44.662909944Z",
       "description_snippet": null
     },
     {
@@ -97,8 +108,8 @@
       "location": "Netherlands, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142948/manager-clinical-operations-ctm-/",
       "source": "Pharmiweb",
-      "posted_at": "11 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533682292Z",
+      "posted_at": "12 days ago",
+      "scraped_at": "2026-04-17T06:49:44.662920353Z",
       "description_snippet": null
     },
     {
@@ -108,30 +119,8 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2140910/clinical-trial-manager-sr-clinical-trial-manager-pm-sr-pm-/",
       "source": "Pharmiweb",
-      "posted_at": "7 days left",
-      "scraped_at": "2026-04-16T06:48:26.533702009Z",
-      "description_snippet": null
-    },
-    {
-      "id": "bfa1f81a9b81f0fb",
-      "title": "Country Study Operations Manager",
-      "company": "ICON Strategic Solutions",
-      "location": "Canada, Homeworking",
-      "url": "https://www.pharmiweb.jobs/job/2143684/country-study-operations-manager/",
-      "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533712608Z",
-      "description_snippet": null
-    },
-    {
-      "id": "e08433ce2e4fae6a",
-      "title": "Country Study Operations Manager",
-      "company": "ICON Strategic Solutions",
-      "location": "Canada, Homeworking",
-      "url": "https://www.pharmiweb.jobs/job/2143683/country-study-operations-manager/",
-      "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:26.533723509Z",
+      "posted_at": "6 days left",
+      "scraped_at": "2026-04-17T06:49:44.662951722Z",
       "description_snippet": null
     },
     {
@@ -141,8 +130,8 @@
       "location": "United Kingdom",
       "url": "https://www.pharmiweb.jobs/job/2141186/global-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "22 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172224358Z",
+      "posted_at": "7 days left",
+      "scraped_at": "2026-04-17T06:49:45.406358576Z",
       "description_snippet": null
     },
     {
@@ -152,8 +141,8 @@
       "location": "Canada",
       "url": "https://www.pharmiweb.jobs/job/2141192/global-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "22 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172231993Z",
+      "posted_at": "7 days left",
+      "scraped_at": "2026-04-17T06:49:45.406365960Z",
       "description_snippet": null
     },
     {
@@ -163,8 +152,30 @@
       "location": "Canada",
       "url": "https://www.pharmiweb.jobs/job/2141188/global-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "22 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172237493Z",
+      "posted_at": "7 days left",
+      "scraped_at": "2026-04-17T06:49:45.406372101Z",
+      "description_snippet": null
+    },
+    {
+      "id": "9bcb282615c2d661",
+      "title": "Global Study Manager",
+      "company": "ICON Strategic Solutions",
+      "location": "United States, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144487/global-study-manager/",
+      "source": "Pharmiweb",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-17T06:49:45.406377692Z",
+      "description_snippet": null
+    },
+    {
+      "id": "ea7bfeff64297396",
+      "title": "Global Study Manager",
+      "company": "ICON Strategic Solutions",
+      "location": "Canada, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144486/global-study-manager/",
+      "source": "Pharmiweb",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-17T06:49:45.406383082Z",
       "description_snippet": null
     },
     {
@@ -174,8 +185,8 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143692/global-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "5 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172242883Z",
+      "posted_at": "6 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406395344Z",
       "description_snippet": null
     },
     {
@@ -185,8 +196,8 @@
       "location": "Spain, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142553/global-study-manager-gsm-hematology/",
       "source": "Pharmiweb",
-      "posted_at": "14 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172248123Z",
+      "posted_at": "15 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406400865Z",
       "description_snippet": null
     },
     {
@@ -196,8 +207,8 @@
       "location": "Spain, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142035/global-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "16 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172254815Z",
+      "posted_at": "17 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406406265Z",
       "description_snippet": null
     },
     {
@@ -207,8 +218,8 @@
       "location": "Canada, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2141886/global-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "17 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172260416Z",
+      "posted_at": "18 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406411374Z",
       "description_snippet": null
     },
     {
@@ -218,30 +229,8 @@
       "location": "Spain, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142036/global-clinical-project-manager/",
       "source": "Pharmiweb",
-      "posted_at": "16 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172271206Z",
-      "description_snippet": null
-    },
-    {
-      "id": "da27740d59c0c71e",
-      "title": "Lead Clinical Study Manager",
-      "company": "Takeda Pharmaceutical (US)",
-      "location": "Boston, Massachusetts, United States",
-      "url": "https://www.pharmiweb.jobs/job/2143887/lead-clinical-study-manager/",
-      "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172293327Z",
-      "description_snippet": null
-    },
-    {
-      "id": "92094400bb3b1251",
-      "title": "Lead Clinical Study Manager",
-      "company": "Takeda Pharmaceutical (US)",
-      "location": "Boston, Massachusetts, United States",
-      "url": "https://www.pharmiweb.jobs/job/2143885/lead-clinical-study-manager/",
-      "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172298377Z",
+      "posted_at": "17 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406419029Z",
       "description_snippet": null
     },
     {
@@ -251,19 +240,8 @@
       "location": "Regional Kenya, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144188/clinical-study-manager/",
       "source": "Pharmiweb",
-      "posted_at": "1 day ago",
-      "scraped_at": "2026-04-16T06:48:27.172303546Z",
-      "description_snippet": null
-    },
-    {
-      "id": "c867682c8d808a9c",
-      "title": "Clinical Study Manager",
-      "company": "Takeda Pharmaceutical (US)",
-      "location": "Boston, Massachusetts, United States",
-      "url": "https://www.pharmiweb.jobs/job/2143874/clinical-study-manager/",
-      "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:27.172308726Z",
+      "posted_at": "2 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406435860Z",
       "description_snippet": null
     },
     {
@@ -273,8 +251,30 @@
       "location": "Netherlands",
       "url": "https://www.pharmiweb.jobs/job/2140218/clinical-study-manager-ii/",
       "source": "Pharmiweb",
-      "posted_at": "2 days left",
-      "scraped_at": "2026-04-16T06:48:27.172313916Z",
+      "posted_at": "1 day left",
+      "scraped_at": "2026-04-17T06:49:45.406443174Z",
+      "description_snippet": null
+    },
+    {
+      "id": "1cc7c706bfa62b4e",
+      "title": "Laboratory Study Manager",
+      "company": "ICON Strategic Solutions",
+      "location": "Romania, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2143993/laboratory-study-manager/",
+      "source": "Pharmiweb",
+      "posted_at": "4 days ago",
+      "scraped_at": "2026-04-17T06:49:45.406453723Z",
+      "description_snippet": null
+    },
+    {
+      "id": "82566150c1880022",
+      "title": "Manager, Clinical Trial Management",
+      "company": "ICON Plc",
+      "location": "Slovakia",
+      "url": "https://www.pharmiweb.jobs/job/2144519/manager-clinical-trial-management/",
+      "source": "Pharmiweb",
+      "posted_at": null,
+      "scraped_at": "2026-04-17T06:49:46.186194493Z",
       "description_snippet": null
     },
     {
@@ -284,8 +284,8 @@
       "location": "Peru, Lima, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143674/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476280870Z",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186201095Z",
       "description_snippet": null
     },
     {
@@ -295,8 +295,8 @@
       "location": "Singapore, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2141459/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "20 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476288695Z",
+      "posted_at": "21 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186206726Z",
       "description_snippet": null
     },
     {
@@ -306,8 +306,8 @@
       "location": "Philippines",
       "url": "https://www.pharmiweb.jobs/job/2143869/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476294466Z",
+      "posted_at": "4 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186212075Z",
       "description_snippet": null
     },
     {
@@ -317,19 +317,8 @@
       "location": "Argentina, Buenos Aires, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144178/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "2 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476299796Z",
-      "description_snippet": null
-    },
-    {
-      "id": "0a90b1ffc8e33bba",
-      "title": "Clinical Trial Manager",
-      "company": "ICON Strategic Solutions",
-      "location": "Canada, Homeworking",
-      "url": "https://www.pharmiweb.jobs/job/2143038/clinical-trial-manager/",
-      "source": "Pharmiweb",
-      "posted_at": "10 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476305015Z",
+      "posted_at": "3 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186217385Z",
       "description_snippet": null
     },
     {
@@ -339,8 +328,8 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144360/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": null,
-      "scraped_at": "2026-04-16T06:48:27.476312499Z",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-17T06:49:46.186224879Z",
       "description_snippet": null
     },
     {
@@ -350,8 +339,8 @@
       "location": "Korea",
       "url": "https://www.pharmiweb.jobs/job/2143388/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "7 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476317368Z",
+      "posted_at": "8 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186230590Z",
       "description_snippet": null
     },
     {
@@ -361,8 +350,8 @@
       "location": "Chile, Chile, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143040/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "10 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476322638Z",
+      "posted_at": "11 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186235809Z",
       "description_snippet": null
     },
     {
@@ -372,8 +361,19 @@
       "location": "Canada, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144171/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "2 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476327748Z",
+      "posted_at": "3 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186240869Z",
+      "description_snippet": null
+    },
+    {
+      "id": "29abb04d326e3df4",
+      "title": "Centralized Clinical Trial Manager",
+      "company": "ICON Plc",
+      "location": "India, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144541/centralized-clinical-trial-manager/",
+      "source": "Pharmiweb",
+      "posted_at": null,
+      "scraped_at": "2026-04-17T06:49:46.186246940Z",
       "description_snippet": null
     },
     {
@@ -383,8 +383,8 @@
       "location": "United States, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144359/senior-clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": null,
-      "scraped_at": "2026-04-16T06:48:27.476333719Z",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-17T06:49:46.186252420Z",
       "description_snippet": null
     },
     {
@@ -394,8 +394,8 @@
       "location": "Germany",
       "url": "https://www.pharmiweb.jobs/job/2143543/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476339089Z",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186257720Z",
       "description_snippet": null
     },
     {
@@ -405,8 +405,8 @@
       "location": "Thailand, Bangkok",
       "url": "https://www.pharmiweb.jobs/job/2143517/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476344219Z",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186262890Z",
       "description_snippet": null
     },
     {
@@ -416,8 +416,8 @@
       "location": "Czech Republic, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142056/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "16 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476349448Z",
+      "posted_at": "17 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186267939Z",
       "description_snippet": null
     },
     {
@@ -427,8 +427,8 @@
       "location": "Mexico, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143691/senior-clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "5 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476354548Z",
+      "posted_at": "6 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186273069Z",
       "description_snippet": null
     },
     {
@@ -438,8 +438,19 @@
       "location": "Brazil, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2140908/senior-clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "7 days left",
-      "scraped_at": "2026-04-16T06:48:27.476360128Z",
+      "posted_at": "6 days left",
+      "scraped_at": "2026-04-17T06:49:46.186278609Z",
+      "description_snippet": null
+    },
+    {
+      "id": "8da4aae09fb465cd",
+      "title": "Senior Clinical Trial Manager",
+      "company": "ICON Plc",
+      "location": "Mexico, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144512/senior-clinical-trial-manager/",
+      "source": "Pharmiweb",
+      "posted_at": null,
+      "scraped_at": "2026-04-17T06:49:46.186284380Z",
       "description_snippet": null
     },
     {
@@ -449,8 +460,8 @@
       "location": "Japan",
       "url": "https://www.pharmiweb.jobs/job/2142467/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "14 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476365328Z",
+      "posted_at": "15 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186290111Z",
       "description_snippet": null
     },
     {
@@ -460,8 +471,8 @@
       "location": "Brazil, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142193/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "15 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476370537Z",
+      "posted_at": "16 days ago",
+      "scraped_at": "2026-04-17T06:49:46.186295270Z",
       "description_snippet": null
     },
     {
@@ -471,30 +482,8 @@
       "location": "Brazil, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144318/clinical-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "1 day ago",
-      "scraped_at": "2026-04-16T06:48:27.476376258Z",
-      "description_snippet": null
-    },
-    {
-      "id": "d2a72a18fff6a88d",
-      "title": "Clinical Trial Submission Manager Associate",
-      "company": "ICON Strategic Solutions",
-      "location": "Istanbul",
-      "url": "https://www.pharmiweb.jobs/job/2144187/clinical-trial-submission-manager-associate/",
-      "source": "Pharmiweb",
-      "posted_at": "1 day ago",
-      "scraped_at": "2026-04-16T06:48:27.476381488Z",
-      "description_snippet": null
-    },
-    {
-      "id": "1a381af28701cf92",
-      "title": "Clinical Trial Submission Manager Associate",
-      "company": "ICON Strategic Solutions",
-      "location": "Istanbul",
-      "url": "https://www.pharmiweb.jobs/job/2141140/clinical-trial-submission-manager-associate/",
-      "source": "Pharmiweb",
       "posted_at": "2 days ago",
-      "scraped_at": "2026-04-16T06:48:27.476386708Z",
+      "scraped_at": "2026-04-17T06:49:46.186300260Z",
       "description_snippet": null
     },
     {
@@ -504,8 +493,8 @@
       "location": "Brazil, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2141698/senior-clinical-project-manager-quality-/",
       "source": "Pharmiweb",
-      "posted_at": "19 days ago",
-      "scraped_at": "2026-04-16T06:48:27.937989112Z",
+      "posted_at": "20 days ago",
+      "scraped_at": "2026-04-17T06:49:46.942656223Z",
       "description_snippet": null
     },
     {
@@ -515,8 +504,8 @@
       "location": "Tokyo, Japan",
       "url": "https://www.pharmiweb.jobs/job/2143583/ad-director-clinical-monitoring/",
       "source": "Pharmiweb",
-      "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:28.340992864Z",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:47.404800815Z",
       "description_snippet": null
     },
     {
@@ -526,8 +515,8 @@
       "location": "Princeton Pike, NJ, United States",
       "url": "https://www.pharmiweb.jobs/job/2142595/director-global-trial-lead/",
       "source": "Pharmiweb",
-      "posted_at": "13 days ago",
-      "scraped_at": "2026-04-16T06:48:28.341032558Z",
+      "posted_at": "14 days ago",
+      "scraped_at": "2026-04-17T06:49:47.404835309Z",
       "description_snippet": null
     },
     {
@@ -537,8 +526,8 @@
       "location": "Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2141218/clinical-trial-manager-/",
       "source": "Pharmiweb",
-      "posted_at": "7 days left",
-      "scraped_at": "2026-04-16T06:48:28.635567585Z",
+      "posted_at": "6 days left",
+      "scraped_at": "2026-04-17T06:49:47.785456940Z",
       "description_snippet": null
     },
     {
@@ -548,8 +537,8 @@
       "location": "India, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144316/end-of-trial-global-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "1 day ago",
-      "scraped_at": "2026-04-16T06:48:28.635586279Z",
+      "posted_at": "2 days ago",
+      "scraped_at": "2026-04-17T06:49:47.785470555Z",
       "description_snippet": null
     },
     {
@@ -559,8 +548,8 @@
       "location": "Germany, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2140241/senior-clinical-trial-transparency-associate/",
       "source": "Pharmiweb",
-      "posted_at": "3 days left",
-      "scraped_at": "2026-04-16T06:48:28.635592010Z",
+      "posted_at": "2 days left",
+      "scraped_at": "2026-04-17T06:49:47.785476656Z",
       "description_snippet": null
     },
     {
@@ -570,8 +559,8 @@
       "location": "Australia, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143989/local-trial-manager/",
       "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:28.635626895Z",
+      "posted_at": "4 days ago",
+      "scraped_at": "2026-04-17T06:49:47.785522582Z",
       "description_snippet": null
     },
     {
@@ -581,8 +570,8 @@
       "location": "Warsaw, Poland",
       "url": "https://www.pharmiweb.jobs/job/2143697/clinical-trial-assistant/",
       "source": "Pharmiweb",
-      "posted_at": "5 days ago",
-      "scraped_at": "2026-04-16T06:48:28.635642625Z",
+      "posted_at": "6 days ago",
+      "scraped_at": "2026-04-17T06:49:47.785539233Z",
       "description_snippet": null
     },
     {
@@ -592,19 +581,30 @@
       "location": "Turkey, Istanbul, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2144169/clinical-trial-associate/",
       "source": "Pharmiweb",
-      "posted_at": "2 days ago",
-      "scraped_at": "2026-04-16T06:48:28.635647754Z",
+      "posted_at": "3 days ago",
+      "scraped_at": "2026-04-17T06:49:47.785550173Z",
       "description_snippet": null
     },
     {
-      "id": "4a6ef9ad279437bd",
-      "title": "Clinical Trial Recruitment Representative",
-      "company": "ICON Plc",
-      "location": "United States",
-      "url": "https://www.pharmiweb.jobs/job/2143798/clinical-trial-recruitment-representative/",
+      "id": "5d0e4f1cc3b5b058",
+      "title": "(Senior) Clinical Trial Assistant",
+      "company": "ICON Strategic Solutions",
+      "location": "Germany, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144483/-senior-clinical-trial-assistant/",
       "source": "Pharmiweb",
-      "posted_at": "4 days ago",
-      "scraped_at": "2026-04-16T06:48:28.635664114Z",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-17T06:49:47.785561474Z",
+      "description_snippet": null
+    },
+    {
+      "id": "e4b15af6dca20c4a",
+      "title": "Clinical Trial Associate",
+      "company": "ICON Strategic Solutions",
+      "location": "Canada, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2144502/clinical-trial-associate/",
+      "source": "Pharmiweb",
+      "posted_at": null,
+      "scraped_at": "2026-04-17T06:49:47.785567135Z",
       "description_snippet": null
     },
     {
@@ -614,8 +614,30 @@
       "location": "Virginia, USA, Midlothian",
       "url": "https://www.pharmiweb.jobs/job/2143491/clinical-research-site-manager-/",
       "source": "Pharmiweb",
-      "posted_at": "7 days left",
-      "scraped_at": "2026-04-16T06:48:28.933041539Z",
+      "posted_at": "6 days left",
+      "scraped_at": "2026-04-17T06:49:48.322296459Z",
+      "description_snippet": null
+    },
+    {
+      "id": "bfa1f81a9b81f0fb",
+      "title": "Country Study Operations Manager",
+      "company": "ICON Strategic Solutions",
+      "location": "Canada, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2143684/country-study-operations-manager/",
+      "source": "Pharmiweb",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:48.322325984Z",
+      "description_snippet": null
+    },
+    {
+      "id": "e08433ce2e4fae6a",
+      "title": "Country Study Operations Manager",
+      "company": "ICON Strategic Solutions",
+      "location": "Canada, Homeworking",
+      "url": "https://www.pharmiweb.jobs/job/2143683/country-study-operations-manager/",
+      "source": "Pharmiweb",
+      "posted_at": "7 days ago",
+      "scraped_at": "2026-04-17T06:49:48.322333238Z",
       "description_snippet": null
     },
     {
@@ -625,8 +647,8 @@
       "location": "Germany, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2143981/manager-non-interventional-study-operations-dermatology-/",
       "source": "Pharmiweb",
-      "posted_at": "3 days ago",
-      "scraped_at": "2026-04-16T06:48:28.933119675Z",
+      "posted_at": "4 days ago",
+      "scraped_at": "2026-04-17T06:49:48.322379844Z",
       "description_snippet": null
     },
     {
@@ -636,19 +658,8 @@
       "location": "Uxbridge, Middlesex, United Kingdom",
       "url": "https://www.pharmiweb.jobs/job/2143779/associate-director-inspection-management-gcp-/",
       "source": "Pharmiweb",
-      "posted_at": "5 days ago",
-      "scraped_at": "2026-04-16T06:48:29.604369505Z",
-      "description_snippet": null
-    },
-    {
-      "id": "30c30ab6f8a38656",
-      "title": "GCP Quality Governance Operations Lead (Sr Manager)",
-      "company": "ICON Strategic Solutions",
-      "location": "Mexico, Homeworking",
-      "url": "https://www.pharmiweb.jobs/job/2143665/gcp-quality-governance-operations-lead-sr-manager-/",
-      "source": "Pharmiweb",
       "posted_at": "6 days ago",
-      "scraped_at": "2026-04-16T06:48:29.604393730Z",
+      "scraped_at": "2026-04-17T06:49:48.724316942Z",
       "description_snippet": null
     },
     {
@@ -658,8 +669,8 @@
       "location": "Croatia, Croatia",
       "url": "https://www.pharmiweb.jobs/job/2142264/clinical-quality-assurance-lead-gcp-cee/",
       "source": "Pharmiweb",
-      "posted_at": "15 days ago",
-      "scraped_at": "2026-04-16T06:48:29.604400953Z",
+      "posted_at": "16 days ago",
+      "scraped_at": "2026-04-17T06:49:48.724354091Z",
       "description_snippet": null
     },
     {
@@ -669,8 +680,8 @@
       "location": "North Carolina, USA, Durham",
       "url": "https://www.pharmiweb.jobs/job/2140979/clinical-trial-manager-/",
       "source": "Pharmiweb",
-      "posted_at": "5 days left",
-      "scraped_at": "2026-04-16T06:48:29.604429677Z",
+      "posted_at": "4 days left",
+      "scraped_at": "2026-04-17T06:49:48.724382895Z",
       "description_snippet": null
     },
     {
@@ -680,8 +691,8 @@
       "location": "Belgium, Mechelen, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2142286/clinical-site-manager-ii/",
       "source": "Pharmiweb",
-      "posted_at": "15 days ago",
-      "scraped_at": "2026-04-16T06:48:29.604445797Z",
+      "posted_at": "16 days ago",
+      "scraped_at": "2026-04-17T06:49:48.724398965Z",
       "description_snippet": null
     },
     {
@@ -691,8 +702,8 @@
       "location": "France, Homeworking",
       "url": "https://www.pharmiweb.jobs/job/2141580/clinical-site-manager-ii/",
       "source": "Pharmiweb",
-      "posted_at": "20 days ago",
-      "scraped_at": "2026-04-16T06:48:29.604450867Z",
+      "posted_at": "21 days ago",
+      "scraped_at": "2026-04-17T06:49:48.724404085Z",
       "description_snippet": null
     },
     {
@@ -702,20 +713,42 @@
       "location": "Munich, Germany",
       "url": "https://www.pharmiweb.jobs/job/2141471/sponsor-dedicated-local-trial-manager-based-in-germany/",
       "source": "Pharmiweb",
-      "posted_at": "20 days ago",
-      "scraped_at": "2026-04-16T06:48:29.604455916Z",
+      "posted_at": "21 days ago",
+      "scraped_at": "2026-04-17T06:49:48.724409475Z",
       "description_snippet": null
     },
     {
-      "id": "05b0f8b7899881d5",
-      "title": "Senior Manager, R&D Outsourcing",
-      "company": "CSL (EMEA)",
-      "location": "United Kingdom; Switzerland",
-      "url": "https://www.pharmiweb.jobs/job/2139733/senior-manager-r-and-d-outsourcing/",
+      "id": "df8ceac74cb86353",
+      "title": "Senior Quality Compliance Auditor Clinical Trials",
+      "company": "Fortrea",
+      "location": "Leeds, United Kingdom",
+      "url": "https://www.pharmiweb.jobs/job/2144539/senior-quality-compliance-auditor-clinical-trials/",
       "source": "Pharmiweb",
-      "posted_at": "Expiring today",
-      "scraped_at": "2026-04-16T06:48:30.208231761Z",
+      "posted_at": null,
+      "scraped_at": "2026-04-17T06:49:48.724415766Z",
       "description_snippet": null
+    },
+    {
+      "id": "280bc0ec61fe3d1a",
+      "title": "Supply Chain Manager for Clinical Trial medications",
+      "company": "R&D Partners",
+      "location": "Gothenburg, Sweden",
+      "url": "https://www.pharmiweb.jobs/job/2143418/supply-chain-manager-for-clinical-trial-medications/",
+      "source": "Pharmiweb",
+      "posted_at": "8 days ago",
+      "scraped_at": "2026-04-17T06:49:48.724425945Z",
+      "description_snippet": null
+    },
+    {
+      "id": "1d282b0b6c5f2eee",
+      "title": "Lead Local Trial Manager",
+      "company": "Johnson & Johnson",
+      "location": "3 Locations",
+      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Mumbai-India/Lead-Local-Trial-Manager_R-064986-1",
+      "source": "Johnson & Johnson (Careers)",
+      "posted_at": "Posted Today",
+      "scraped_at": "2026-04-17T06:49:45.075951277Z",
+      "description_snippet": "R-064986"
     },
     {
       "id": "daad24ec7968ee69",
@@ -724,8 +757,8 @@
       "location": "Toronto, Ontario, Canada",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Toronto-Ontario-Canada/Global-Trial-Associate--Global-Clinical-Operations-Leadership-Development-Program_R-063061",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:26.964373416Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:45.075960524Z",
       "description_snippet": "R-063061"
     },
     {
@@ -735,8 +768,8 @@
       "location": "High Wycombe, Buckinghamshire, United Kingdom",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/High-Wycombe-Buckinghamshire-United-Kingdom/Senior-Local-Trial-Manager_R-068905",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:26.964374909Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:45.075962528Z",
       "description_snippet": "R-068905"
     },
     {
@@ -746,8 +779,8 @@
       "location": "2 Locations",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Mumbai-India/Country-Head---Global-Clinical-Operations--India_R-066913",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted 2 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.964376793Z",
+      "posted_at": "Posted 3 Days Ago",
+      "scraped_at": "2026-04-17T06:49:45.075967657Z",
       "description_snippet": "R-066913"
     },
     {
@@ -757,8 +790,8 @@
       "location": "2 Locations",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Beerse-Antwerp-Belgium/Clinical-Project-Manager_R-068642",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted 2 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.964378656Z",
+      "posted_at": "Posted 3 Days Ago",
+      "scraped_at": "2026-04-17T06:49:45.075969371Z",
       "description_snippet": "R-068642"
     },
     {
@@ -768,20 +801,9 @@
       "location": "Allschwil, Basel-Country, Switzerland",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Allschwil-Basel-Country-Switzerland/Clinical-Project-Manager_R-069529",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted 2 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.964380690Z",
+      "posted_at": "Posted 3 Days Ago",
+      "scraped_at": "2026-04-17T06:49:45.075970954Z",
       "description_snippet": "R-069529"
-    },
-    {
-      "id": "34a174e76302e0d5",
-      "title": "Associate Local Trial Manager",
-      "company": "Johnson & Johnson",
-      "location": "2 Locations",
-      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Beerse-Antwerp-Belgium/Associate-Local-Trial-Manager_R-068547-1",
-      "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted 7 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.964391219Z",
-      "description_snippet": "R-068547"
     },
     {
       "id": "1ca25af1235c4721",
@@ -790,8 +812,8 @@
       "location": "Warsaw, Masovian, Poland",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Warsaw-Masovian-Poland/Associate-Site-Manager_R-067489",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted Today",
-      "scraped_at": "2026-04-16T06:48:28.104635156Z",
+      "posted_at": "Posted Yesterday",
+      "scraped_at": "2026-04-17T06:49:50.726004716Z",
       "description_snippet": "R-067489"
     },
     {
@@ -801,8 +823,8 @@
       "location": "Warsaw, Masovian, Poland",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Warsaw-Masovian-Poland/Senior-Site-Manager_R-067490",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted Today",
-      "scraped_at": "2026-04-16T06:48:28.104636037Z",
+      "posted_at": "Posted Yesterday",
+      "scraped_at": "2026-04-17T06:49:50.726005398Z",
       "description_snippet": "R-067490"
     },
     {
@@ -812,8 +834,8 @@
       "location": "High Wycombe, Buckinghamshire, United Kingdom",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/High-Wycombe-Buckinghamshire-United-Kingdom/Senior-Site-Manager--Immunology_R-069103",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:28.104643962Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:51.836226500Z",
       "description_snippet": "R-069103"
     },
     {
@@ -823,20 +845,9 @@
       "location": "Bangkok, Bangkok, Thailand",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Bangkok-Bangkok-Thailand/Senior-Site-Manager_R-068831",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted 5 Days Ago",
-      "scraped_at": "2026-04-16T06:48:33.860422422Z",
-      "description_snippet": "R-068831"
-    },
-    {
-      "id": "44fd6a7b3949fff6",
-      "title": "Associate Site Manager - Mumbai/Bangalore/Hyderabad/Delhi",
-      "company": "Johnson & Johnson",
-      "location": "4 Locations",
-      "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Mumbai-India/Associate-Site-Manager---Mumbai-Bangalore-Hyderabad-Delhi_R-064980",
-      "source": "Johnson & Johnson (Careers)",
       "posted_at": "Posted 6 Days Ago",
-      "scraped_at": "2026-04-16T06:48:33.860424706Z",
-      "description_snippet": "R-064980"
+      "scraped_at": "2026-04-17T06:49:51.836234094Z",
+      "description_snippet": "R-068831"
     },
     {
       "id": "3da0eb022e1ec36c",
@@ -845,30 +856,19 @@
       "location": "2 Locations",
       "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Beerse-Antwerp-Belgium/Lead-Local-Trial-Manager_R-066721",
       "source": "Johnson & Johnson (Careers)",
-      "posted_at": "Posted 16 Days Ago",
-      "scraped_at": "2026-04-16T06:48:33.860428133Z",
+      "posted_at": "Posted 17 Days Ago",
+      "scraped_at": "2026-04-17T06:49:51.836237490Z",
       "description_snippet": "R-066721"
     },
     {
-      "id": "a1d2e4314393bea3",
-      "title": "Director, Clinical Operations Lead",
-      "company": "CSL",
-      "location": "King of Prussia, PA",
-      "url": "https://jobs.biospace.com/job/3042804/director-clinical-operations-lead/",
+      "id": "e3abe316748dad3f",
+      "title": "Clinical Operations Study Country Lead",
+      "company": "Sanofi",
+      "location": "Remote,",
+      "url": "https://jobs.biospace.com/job/3043066/clinical-operations-study-country-lead/",
       "source": "BioSpace",
       "posted_at": null,
-      "scraped_at": "2026-04-16T06:48:26.048260022Z",
-      "description_snippet": null
-    },
-    {
-      "id": "4e77e12906a11f2e",
-      "title": "Senior Manager, R&D Outsourcing",
-      "company": "CSL",
-      "location": "King of Prussia, PA",
-      "url": "https://jobs.biospace.com/job/3042801/senior-manager-r-and-d-outsourcing/",
-      "source": "BioSpace",
-      "posted_at": null,
-      "scraped_at": "2026-04-16T06:48:26.048284248Z",
+      "scraped_at": "2026-04-17T06:49:44.586742816Z",
       "description_snippet": null
     },
     {
@@ -878,8 +878,8 @@
       "location": "Mississauga",
       "url": "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Mississauga/Clinical-Operations-Country-Head_202603-106943-2",
       "source": "Roche (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:26.009962648Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:44.569394657Z",
       "description_snippet": "202603-106943"
     },
     {
@@ -889,20 +889,9 @@
       "location": "Hyderabad",
       "url": "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Hyderabad/Team-Lead-Clinical-Trial-Payment-Operations_202604-108469",
       "source": "Roche (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:26.009965503Z",
-      "description_snippet": "202604-108469"
-    },
-    {
-      "id": "1fa5b7c0a82e8cf8",
-      "title": "Clinical Trial Payment Specialist",
-      "company": "Roche",
-      "location": "Budapest",
-      "url": "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Budapest/Clinical-Trial-Payment-Specialist_202509-122637-1",
-      "source": "Roche (Careers)",
       "posted_at": "Posted 2 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.009971023Z",
-      "description_snippet": "202509-122637"
+      "scraped_at": "2026-04-17T06:49:44.569396280Z",
+      "description_snippet": "202604-108469"
     },
     {
       "id": "374e9894116ea8f5",
@@ -912,19 +901,52 @@
       "url": "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Riga/Clinical-Trial-Regulatory-Affairs-Expert--Fixed-term-_202602-103130-1",
       "source": "Roche (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:28.454891328Z",
+      "scraped_at": "2026-04-17T06:49:47.039155147Z",
       "description_snippet": "202602-103130"
     },
     {
-      "id": "b16482b0a9107da4",
-      "title": "Global Clinical Operations Program Director (R&I)",
+      "id": "1fa5b7c0a82e8cf8",
+      "title": "Clinical Trial Payment Specialist",
+      "company": "Roche",
+      "location": "Budapest",
+      "url": "https://roche.wd3.myworkdayjobs.com/roche-ext/job/Budapest/Clinical-Trial-Payment-Specialist_202509-122637-1",
+      "source": "Roche (Careers)",
+      "posted_at": "Posted 3 Days Ago",
+      "scraped_at": "2026-04-17T06:49:50.988273690Z",
+      "description_snippet": "202509-122637"
+    },
+    {
+      "id": "9432b8295a09f7d0",
+      "title": "Global Study Manager Cell Therapy",
       "company": "AstraZeneca",
-      "location": "US - Gaithersburg - MD",
-      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Gaithersburg---MD/Global-Clinical-Operations-Program-Director--GPD-_R-249274",
+      "location": "Spain - Barcelona",
+      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Spain---Barcelona/Global-Study-Manager-Cell-Therapy_R-249887",
       "source": "AstraZeneca (Careers)",
       "posted_at": "Posted Today",
-      "scraped_at": "2026-04-16T06:48:26.123618013Z",
-      "description_snippet": "R-249274"
+      "scraped_at": "2026-04-17T06:49:44.325017538Z",
+      "description_snippet": "R-249887"
+    },
+    {
+      "id": "90515a1212249726",
+      "title": "Analyst, Clinical Trial Transparency, Anonymization",
+      "company": "AstraZeneca",
+      "location": "Poland - Warsaw",
+      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Poland---Warsaw/Analyst--Clinical-Trial-Transparency--Anonymization_R-248493",
+      "source": "AstraZeneca (Careers)",
+      "posted_at": "Posted Today",
+      "scraped_at": "2026-04-17T06:49:44.325018570Z",
+      "description_snippet": "R-248493"
+    },
+    {
+      "id": "5eda2b9830d84705",
+      "title": "Global Study Manager - Haematology",
+      "company": "AstraZeneca",
+      "location": "Netherlands - Amsterdam - Medical Business Centre",
+      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Netherlands---Amsterdam---Medical-Business-Centre/Global-Study-Manager---Haematology_R-247782",
+      "source": "AstraZeneca (Careers)",
+      "posted_at": "Posted Today",
+      "scraped_at": "2026-04-17T06:49:44.325020283Z",
+      "description_snippet": "R-247782"
     },
     {
       "id": "8ebbc77bae406ba8",
@@ -933,42 +955,20 @@
       "location": "US - Durham - NC",
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Durham---NC/Global-Study-Associate_R-250032",
       "source": "AstraZeneca (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:26.123627Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:45.613562553Z",
       "description_snippet": "R-250032"
     },
     {
-      "id": "07c06f44062d02f2",
-      "title": "Global Study Manager",
+      "id": "b16482b0a9107da4",
+      "title": "Global Clinical Operations Program Director (R&I)",
       "company": "AstraZeneca",
-      "location": "US - Durham - NC",
-      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Durham---NC/Global-Study-Manager_R-249929-1",
+      "location": "US - Gaithersburg - MD",
+      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US---Gaithersburg---MD/Global-Clinical-Operations-Program-Director--GPD-_R-249274",
       "source": "AstraZeneca (Careers)",
-      "posted_at": "Posted 5 Days Ago",
-      "scraped_at": "2026-04-16T06:48:27.355665879Z",
-      "description_snippet": "R-249929"
-    },
-    {
-      "id": "d5edbfc619759ea9",
-      "title": "Manager, Clinical Trial Transparency, Data Sharing",
-      "company": "AstraZeneca",
-      "location": "Poland - Warsaw",
-      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Poland---Warsaw/Manager--Clinical-Trial-Transparency--Data-Sharing_R-249990",
-      "source": "AstraZeneca (Careers)",
-      "posted_at": "Posted 2 Days Ago",
-      "scraped_at": "2026-04-16T06:48:28.611741724Z",
-      "description_snippet": "R-249990"
-    },
-    {
-      "id": "7c223e928ab6569a",
-      "title": "Local Study Manager",
-      "company": "AstraZeneca",
-      "location": "US",
-      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/US/Local-Study-Manager_R-249916",
-      "source": "AstraZeneca (Careers)",
-      "posted_at": "Posted 5 Days Ago",
-      "scraped_at": "2026-04-16T06:48:31.350961961Z",
-      "description_snippet": "R-249916"
+      "posted_at": "Posted Yesterday",
+      "scraped_at": "2026-04-17T06:49:50.051952954Z",
+      "description_snippet": "R-249274"
     },
     {
       "id": "f0c96a1b9405e59a",
@@ -977,8 +977,8 @@
       "location": "2 Locations",
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Shanghai-JingAn-Office/XMLNAME--Sr--Global-Study-Associate-Manager---Cell-Therapy_R-249269",
       "source": "AstraZeneca (Careers)",
-      "posted_at": "Posted 14 Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.162584462Z",
+      "posted_at": "Posted 15 Days Ago",
+      "scraped_at": "2026-04-17T06:49:53.947446856Z",
       "description_snippet": "R-249269"
     },
     {
@@ -988,8 +988,8 @@
       "location": "Beijing Yizhuang",
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Beijing-Yizhuang/XMLNAME--Sr--Country-Study-Manager---Cell-Therapy_R-248479",
       "source": "AstraZeneca (Careers)",
-      "posted_at": "Posted 26 Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.162589021Z",
+      "posted_at": "Posted 27 Days Ago",
+      "scraped_at": "2026-04-17T06:49:53.947449802Z",
       "description_snippet": "R-248479"
     },
     {
@@ -1000,7 +1000,7 @@
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Beijing-Yizhuang/Global-Study-Associate_R-247571",
       "source": "AstraZeneca (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.162593499Z",
+      "scraped_at": "2026-04-17T06:49:53.947452907Z",
       "description_snippet": "R-247571"
     },
     {
@@ -1011,7 +1011,7 @@
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Beijing-Yizhuang/XMLNAME--Associate--Country-Study-Manager---Onco_R-247570",
       "source": "AstraZeneca (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.162594781Z",
+      "scraped_at": "2026-04-17T06:49:53.947453799Z",
       "description_snippet": "R-247570"
     },
     {
@@ -1022,7 +1022,7 @@
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Beijing-Yizhuang/Global-Study-Lead_R-245728-1",
       "source": "AstraZeneca (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.162597516Z",
+      "scraped_at": "2026-04-17T06:49:53.947455672Z",
       "description_snippet": "R-245728"
     },
     {
@@ -1033,8 +1033,19 @@
       "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Shanghai-JingAn-Office/Global-Study-Associate-Manager_R-245384",
       "source": "AstraZeneca (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.162599069Z",
+      "scraped_at": "2026-04-17T06:49:53.947456584Z",
       "description_snippet": "R-245384"
+    },
+    {
+      "id": "8d7775566206f9db",
+      "title": "Global Study Associate Manager",
+      "company": "AstraZeneca",
+      "location": "2 Locations",
+      "url": "https://astrazeneca.wd3.myworkdayjobs.com/Careers/job/Shanghai-JingAn-Office/Global-Study-Associate-Manager_R-245383-1",
+      "source": "AstraZeneca (Careers)",
+      "posted_at": "Posted 30+ Days Ago",
+      "scraped_at": "2026-04-17T06:49:53.947457486Z",
+      "description_snippet": "R-245383"
     },
     {
       "id": "bd2ce5e9539a11bc",
@@ -1043,8 +1054,8 @@
       "location": "BE - Bornem",
       "url": "https://lonza.wd3.myworkdayjobs.com/Lonza_Careers/job/BE---Bornem/Site-Operational-Excellence-Manager--Dutch-speaking-_R74598",
       "source": "Lonza (Careers)",
-      "posted_at": "Posted 15 Days Ago",
-      "scraped_at": "2026-04-16T06:48:35.845160670Z",
+      "posted_at": "Posted 16 Days Ago",
+      "scraped_at": "2026-04-17T06:49:53.771071024Z",
       "description_snippet": "R74598"
     },
     {
@@ -1054,8 +1065,8 @@
       "location": "DE - Cologne",
       "url": "https://lonza.wd3.myworkdayjobs.com/Lonza_Careers/job/DE---Cologne/Site-Operations-Head--Cologne_R73398",
       "source": "Lonza (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:35.845162113Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:53.771073609Z",
       "description_snippet": "R73398"
     },
     {
@@ -1066,7 +1077,7 @@
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Paris-Headquarter-PHARMA/Clinical-Operations-Country-Head_REQ-10071791-1",
       "source": "Novartis (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.375878126Z",
+      "scraped_at": "2026-04-17T06:49:44.785787162Z",
       "description_snippet": "REQ-10071791"
     },
     {
@@ -1076,8 +1087,8 @@
       "location": "Remote Position (USA)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Remote-Position-USA/Study-and-Site-Operations-Contracts-and-Payments-Head--Remote-Position-_REQ-10074078-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 13 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.375881622Z",
+      "posted_at": "Posted 14 Days Ago",
+      "scraped_at": "2026-04-17T06:49:44.785789747Z",
       "description_snippet": "REQ-10074078"
     },
     {
@@ -1087,8 +1098,8 @@
       "location": "Field Force (England / Wales)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Field-Force-England--Wales/Site-Partnership-Manager--Study-and-Site-Operations---12-Month-Fixed-Term-Contract_REQ-10072471-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 6 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.375883065Z",
+      "posted_at": "Posted 7 Days Ago",
+      "scraped_at": "2026-04-17T06:49:44.785790909Z",
       "description_snippet": "REQ-10072471"
     },
     {
@@ -1098,8 +1109,8 @@
       "location": "Mumbai (Head Office)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Mumbai-Head-Office/Site-Partnership-Manager_REQ-10075397-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 6 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.375901259Z",
+      "posted_at": "Posted 7 Days Ago",
+      "scraped_at": "2026-04-17T06:49:44.785806718Z",
       "description_snippet": "REQ-10075397"
     },
     {
@@ -1109,8 +1120,8 @@
       "location": "3 Locations",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Dublin-NOCC/Senior-Global-Process-Owner---Risk-Based-Quality-Management--Clinical-Trials-_REQ-10074284",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 20 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.375903113Z",
+      "posted_at": "Posted 21 Days Ago",
+      "scraped_at": "2026-04-17T06:49:44.785808031Z",
       "description_snippet": "REQ-10074284"
     },
     {
@@ -1120,8 +1131,8 @@
       "location": "Hyderabad (Office)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/GCP-Compliance-Manager--Program---Study_REQ-10073757-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 23 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.375904155Z",
+      "posted_at": "Posted 24 Days Ago",
+      "scraped_at": "2026-04-17T06:49:44.785809023Z",
       "description_snippet": "REQ-10073757"
     },
     {
@@ -1131,8 +1142,8 @@
       "location": "Hyderabad (Office)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/Clinical-Trial-Supply-Manager_REQ-10074708",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 15 Days Ago",
-      "scraped_at": "2026-04-16T06:48:29.612209291Z",
+      "posted_at": "Posted 16 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.228870036Z",
       "description_snippet": "REQ-10074708"
     },
     {
@@ -1142,9 +1153,20 @@
       "location": "Hyderabad (Office)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Hyderabad-Office/Clinical-Sciences-Trial-Leader_REQ-10075370-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:29.612210974Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.228872331Z",
       "description_snippet": "REQ-10075370"
+    },
+    {
+      "id": "c1fd25fcba94d4a1",
+      "title": "Clinical Research Associate/ Senior Clinical Research Associate",
+      "company": "Novartis",
+      "location": "Mapletree Business City (MBC)",
+      "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Mapletree-Business-City-MBC/Clinical-Research-Associate--Senior-Clinical-Research-Associate_REQ-10075966-1",
+      "source": "Novartis (Careers)",
+      "posted_at": "Posted Today",
+      "scraped_at": "2026-04-17T06:49:48.228874985Z",
+      "description_snippet": "REQ-10075966"
     },
     {
       "id": "f6d286f9386d2083",
@@ -1153,8 +1175,8 @@
       "location": "2 Locations",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Delhi-Office/Senior-Clinical-Research-Associate_REQ-10075873-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:29.612232284Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.228876038Z",
       "description_snippet": "REQ-10075873"
     },
     {
@@ -1164,8 +1186,8 @@
       "location": "London (The Westworks)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/London-The-Westworks/Clinical-Pharmacology-Trial-Leader--Trial-Leadership----Translational-Medicine_REQ-10074614-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 19 Days Ago",
-      "scraped_at": "2026-04-16T06:48:29.612245438Z",
+      "posted_at": "Posted 20 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.228886246Z",
       "description_snippet": "REQ-10074614"
     },
     {
@@ -1175,8 +1197,8 @@
       "location": "London (The Westworks)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/London-The-Westworks/Senior-Clinical-Trial-Leader---Translational-Medicine_REQ-10074933-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted 19 Days Ago",
-      "scraped_at": "2026-04-16T06:48:29.612249927Z",
+      "posted_at": "Posted 20 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.228890625Z",
       "description_snippet": "REQ-10074933"
     },
     {
@@ -1186,8 +1208,8 @@
       "location": "Mapletree Business City (MBC)",
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Mapletree-Business-City-MBC/CRA-Manager_REQ-10075809-1",
       "source": "Novartis (Careers)",
-      "posted_at": "Posted Yesterday",
-      "scraped_at": "2026-04-16T06:48:29.612255327Z",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-17T06:49:49.983091991Z",
       "description_snippet": "REQ-10075809"
     },
     {
@@ -1198,19 +1220,8 @@
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Barcelona-Provincial/Senior-Global-GCP-PV-Auditor_REQ-10068836-1",
       "source": "Novartis (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:37.680434035Z",
+      "scraped_at": "2026-04-17T06:49:56.655305914Z",
       "description_snippet": "REQ-10068836"
-    },
-    {
-      "id": "3c6ea8d97b39f8a6",
-      "title": "Early Development Global Study Leader - VIE Contract",
-      "company": "Sanofi",
-      "location": "Morristown, NJ",
-      "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Morristown-NJ/Early-Development-Global-Study-Leader---VIE-Contract_R2850746",
-      "source": "Sanofi (Careers)",
-      "posted_at": "Posted Today",
-      "scraped_at": "2026-04-16T06:48:26.480269152Z",
-      "description_snippet": "R2850746"
     },
     {
       "id": "85be93124d6bdbd1",
@@ -1220,30 +1231,8 @@
       "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Budapest/Operational-Data-Steward-Leader_R2851392",
       "source": "Sanofi (Careers)",
       "posted_at": "Posted Today",
-      "scraped_at": "2026-04-16T06:48:26.480272629Z",
+      "scraped_at": "2026-04-17T06:49:44.799027231Z",
       "description_snippet": "R2851392"
-    },
-    {
-      "id": "5999ef23267283d4",
-      "title": "Clinical Operations Study Country Lead",
-      "company": "Sanofi",
-      "location": "2 Locations",
-      "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Morristown-NJ/Clinical-Operations-Study-Country-Lead_R2851011",
-      "source": "Sanofi (Careers)",
-      "posted_at": "Posted Today",
-      "scraped_at": "2026-04-16T06:48:26.480273911Z",
-      "description_snippet": "R2851011"
-    },
-    {
-      "id": "a2c53460e4e7150e",
-      "title": "Directeur du Canada - Unité d’étude clinique - Opérations cliniques / Head of Canada - Clinical Study Unit - Clinical Operations",
-      "company": "Sanofi",
-      "location": "Toronto, ON",
-      "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Toronto-ON/Directeur-du-Canada---Unit-d-tude-clinique---Oprations-cliniques---Head-of-Canada---Clinical-Study-Unit---Clinical-Operations_R2839518",
-      "source": "Sanofi (Careers)",
-      "posted_at": "Posted 3 Days Ago",
-      "scraped_at": "2026-04-16T06:48:26.480287006Z",
-      "description_snippet": "R2839518"
     },
     {
       "id": "e78841879a1fea44",
@@ -1252,8 +1241,8 @@
       "location": "Shanghai",
       "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Shanghai/Medical---Associate-Clinical-Operation-Manager---Shanghai_R2851972",
       "source": "Sanofi (Careers)",
-      "posted_at": "Posted 7 Days Ago",
-      "scraped_at": "2026-04-16T06:48:28.199070349Z",
+      "posted_at": "Posted 8 Days Ago",
+      "scraped_at": "2026-04-17T06:49:46.483472593Z",
       "description_snippet": "R2851972"
     },
     {
@@ -1263,8 +1252,8 @@
       "location": "Beijing",
       "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Beijing/R-D---CSO---Clinical-Operations-Study-Lead---BJ_R2835935",
       "source": "Sanofi (Careers)",
-      "posted_at": "Posted 6 Days Ago",
-      "scraped_at": "2026-04-16T06:48:33.265536072Z",
+      "posted_at": "Posted 7 Days Ago",
+      "scraped_at": "2026-04-17T06:49:51.644421138Z",
       "description_snippet": "R2835935"
     },
     {
@@ -1275,7 +1264,7 @@
       "url": "https://sanofi.wd3.myworkdayjobs.com/SanofiCareers/job/Beijing/R-D---CSO---Associate-Director--Global-Program-Manager--Diversity---Inclusion-in-Clinical-Trials---BJ_R2841961-1",
       "source": "Sanofi (Careers)",
       "posted_at": "Posted 30+ Days Ago",
-      "scraped_at": "2026-04-16T06:48:33.265547573Z",
+      "scraped_at": "2026-04-17T06:49:51.644429714Z",
       "description_snippet": "R2841961"
     },
     {
@@ -1285,8 +1274,8 @@
       "location": "Massachusetts - Virtual",
       "url": "https://takeda.wd3.myworkdayjobs.com/External/job/Massachusetts---Virtual/Clinical-Study-Manager_R0176862",
       "source": "Takeda (Careers)",
-      "posted_at": "Posted 12 Days Ago",
-      "scraped_at": "2026-04-16T06:48:29.971140051Z",
+      "posted_at": "Posted 13 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.317705832Z",
       "description_snippet": "R0176862"
     },
     {
@@ -1296,8 +1285,8 @@
       "location": "Massachusetts - Virtual",
       "url": "https://takeda.wd3.myworkdayjobs.com/External/job/Massachusetts---Virtual/Lead-Clinical-Study-Manager_R0172549",
       "source": "Takeda (Careers)",
-      "posted_at": "Posted 12 Days Ago",
-      "scraped_at": "2026-04-16T06:48:29.971145091Z",
+      "posted_at": "Posted 13 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.317709870Z",
       "description_snippet": "R0172549"
     },
     {
@@ -1307,9 +1296,20 @@
       "location": "Massachusetts - Virtual",
       "url": "https://takeda.wd3.myworkdayjobs.com/External/job/Massachusetts---Virtual/Lead-Clinical-Study-Manager_R0162221",
       "source": "Takeda (Careers)",
-      "posted_at": "Posted 12 Days Ago",
-      "scraped_at": "2026-04-16T06:48:29.971147725Z",
+      "posted_at": "Posted 13 Days Ago",
+      "scraped_at": "2026-04-17T06:49:48.317712054Z",
       "description_snippet": "R0162221"
+    },
+    {
+      "id": "9202ba6540d11edd",
+      "title": "Site Manager (h/f)",
+      "company": "LHH",
+      "location": "Mulhouse, Grand Est, France",
+      "url": "https://fr.linkedin.com/jobs/view/site-manager-h-f-at-lhh-4390485847",
+      "source": "LinkedIn",
+      "posted_at": "2026-04-16",
+      "scraped_at": "2026-04-17T06:49:55.150354260Z",
+      "description_snippet": null
     }
   ]
 }
