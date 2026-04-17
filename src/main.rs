@@ -8,12 +8,10 @@ use models::JobListing;
 use scrapers::{
     Scraper,
     pharmiweb::PharmiwebScraper,
-    linkedin::LinkedInScraper,
-    indeed::IndeedScraper,
     jobs_ch::JobsChScraper,
     workday::WorkdayScraper,
     bayer::BayerScraper,
-    biospace::BiospaceScraper,
+    csl_vifor::CslViforScraper,
 };
 use std::collections::HashSet;
 use tokio::task::JoinSet;
@@ -36,13 +34,13 @@ async fn main() -> Result<()> {
     let location = config.search.location.clone();
 
     // ── Build scraper list ────────────────────────────────────────────────
+    // General boards (LinkedIn, Indeed, BioSpace) removed — they return global results.
+    // All sources below are either Swiss job boards or company-direct career pages.
     let mut scrapers: Vec<Box<dyn Scraper + Send + Sync + 'static>> = vec![
-        Box::new(PharmiwebScraper),
-        Box::new(BiospaceScraper),
-        Box::new(LinkedInScraper),
-        Box::new(IndeedScraper),
-        Box::new(JobsChScraper),
-        Box::new(BayerScraper),
+        Box::new(PharmiwebScraper),   // pharma-specific; location=Switzerland passed
+        Box::new(JobsChScraper),      // Swiss job board
+        Box::new(BayerScraper),       // company-direct (Bayer, large Basel site)
+        Box::new(CslViforScraper),    // CSL Vifor, Glattbrugg ZH
     ];
 
     for company in &config.search.workday_companies {
@@ -81,7 +79,7 @@ async fn main() -> Result<()> {
 
     // ── Relevance filter ──────────────────────────────────────────────────
     let before = all_jobs.len();
-    all_jobs.retain(|j| config.filter.is_relevant(&j.title));
+    all_jobs.retain(|j| config.filter.is_relevant(&j.title, &j.location));
     let dropped = before - all_jobs.len();
     if dropped > 0 {
         info!("Relevance filter removed {dropped} irrelevant jobs ({} remaining)", all_jobs.len());

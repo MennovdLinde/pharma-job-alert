@@ -22,25 +22,41 @@ pub struct FilterConfig {
     /// If any of these strings appear in the job title the job is dropped (case-insensitive).
     #[serde(default)]
     pub title_excludes_any: Vec<String>,
+
+    /// At least one of these strings must appear in the job location (case-insensitive).
+    /// Leave empty to allow all locations through.
+    #[serde(default)]
+    pub location_contains_any: Vec<String>,
 }
 
 impl FilterConfig {
-    pub fn is_relevant(&self, title: &str) -> bool {
-        let lower = title.to_lowercase();
+    pub fn is_relevant(&self, title: &str, location: &str) -> bool {
+        let lower_title = title.to_lowercase();
 
-        // Blocklist check — drop if any excluded term is found
+        // Blocklist check — drop if any excluded term is found in title
         for term in &self.title_excludes_any {
-            if lower.contains(&term.to_lowercase()) {
+            if lower_title.contains(&term.to_lowercase()) {
                 return false;
             }
         }
 
-        // Allowlist check — must match at least one required term (if list is non-empty)
-        if !self.title_contains_any.is_empty() {
-            return self
+        // Title allowlist — must match at least one required term (if list is non-empty)
+        if !self.title_contains_any.is_empty()
+            && !self
                 .title_contains_any
                 .iter()
-                .any(|t| lower.contains(&t.to_lowercase()));
+                .any(|t| lower_title.contains(&t.to_lowercase()))
+        {
+            return false;
+        }
+
+        // Location filter — job must be in Switzerland (if list is non-empty)
+        if !self.location_contains_any.is_empty() {
+            let lower_loc = location.to_lowercase();
+            return self
+                .location_contains_any
+                .iter()
+                .any(|l| lower_loc.contains(&l.to_lowercase()));
         }
 
         true

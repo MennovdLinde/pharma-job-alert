@@ -5,6 +5,7 @@ pub mod jobs_ch;
 pub mod workday;
 pub mod bayer;
 pub mod biospace;
+pub mod csl_vifor;
 
 use crate::models::JobListing;
 use anyhow::Result;

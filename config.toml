@@ -15,6 +15,33 @@ json_path = "public/jobs.json"
 # Jobs that don't match are silently dropped.
 # ----------------------------------------------------------
 [filter]
+# Job location must contain at least one of these (case-insensitive).
+# Drops any job that isn't clearly based in Switzerland.
+location_contains_any = [
+    "switzerland",
+    "schweiz",
+    "suisse",
+    "svizzera",
+    "basel",
+    "zürich",
+    "zurich",
+    "geneva",
+    "genève",
+    "genf",
+    "zug",
+    "bern",
+    "lausanne",
+    "allschwil",
+    "kaiseraugst",
+    "rotkreuz",
+    "stein am rhein",
+    "schlieren",
+    "reinach",
+    "bubendorf",
+    "meyrin",
+    "plan-les-ouates",
+]
+
 # Title must contain at least one of these (case-insensitive OR logic).
 # Based on Igor's background: clinical ops, study management, trial execution.
 title_contains_any = [
@@ -151,9 +178,60 @@ company_id   = "takeda"
 portal       = "External"
 display_name = "Takeda"
 
-# Add more companies here — no code changes required:
-# [[search.workday_companies]]
-# company_id   = "abbott"
-# portal       = "abbottcareers"
-# wd_instance  = "wd5"
-# display_name = "Abbott"
+# Siegfried — CDMO, HQ Zofingen AG (Swiss) — wd103 instance
+[[search.workday_companies]]
+company_id   = "siegfried"
+portal       = "external"
+wd_instance  = "wd103"
+display_name = "Siegfried"
+
+# Bracco — imaging agents, Geneva institute — wd103 instance
+[[search.workday_companies]]
+company_id   = "bracco"
+portal       = "BraccoCareers"
+wd_instance  = "wd103"
+display_name = "Bracco"
+
+# ── Additional Swiss pharma companies ────────────────────────────────────────
+# Sandoz — spun out of Novartis in Oct 2023, HQ Basel
+# Verify URL: https://sandoz.wd3.myworkdayjobs.com/sandoz/jobs
+[[search.workday_companies]]
+company_id   = "sandoz"
+portal       = "sandoz"
+display_name = "Sandoz"
+
+# Alcon — eye care, HQ Geneva; spun out of Novartis in 2019
+# Verify URL: https://alcon.wd5.myworkdayjobs.com/Careers/jobs
+[[search.workday_companies]]
+company_id   = "alcon"
+portal       = "Careers"
+wd_instance  = "wd5"
+display_name = "Alcon"
+
+# Ferring Pharmaceuticals — private, HQ Saint-Prex (VD), reproductive/GI medicines
+# Verify URL: https://ferring.wd3.myworkdayjobs.com/Ferring/jobs
+[[search.workday_companies]]
+company_id   = "ferring"
+portal       = "Ferring"
+display_name = "Ferring Pharmaceuticals"
+
+# Idorsia — HQ Allschwil (next to Basel), CNS/rare disease focus
+# Verify URL: https://idorsia.wd3.myworkdayjobs.com/Idorsia_Careers/jobs
+[[search.workday_companies]]
+company_id   = "idorsia"
+portal       = "Idorsia_Careers"
+display_name = "Idorsia"
+
+# Galderma — dermatology, HQ Zug; IPO 2024
+# Verify URL: https://galderma.wd3.myworkdayjobs.com/Galderma_Careers/jobs
+[[search.workday_companies]]
+company_id   = "galderma"
+portal       = "Galderma_Careers"
+display_name = "Galderma"
+
+# Straumann — dental/implants, HQ Basel; large R&D org
+# Verify URL: https://straumann.wd3.myworkdayjobs.com/Straumann/jobs
+[[search.workday_companies]]
+company_id   = "straumann"
+portal       = "Straumann"
+display_name = "Straumann"
