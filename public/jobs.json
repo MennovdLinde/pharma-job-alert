@@ -1,5 +1,17 @@
 {
-  "scraped_at": "2026-04-18T06:36:47.936424277+00:00",
-  "total": 0,
-  "jobs": []
+  "scraped_at": "2026-04-19T06:45:24.745071553+00:00",
+  "total": 1,
+  "jobs": [
+    {
+      "id": "0ceb42616f8ed39b",
+      "title": "Senior Manager, R&D Outsourcing",
+      "company": "CSL (EMEA)",
+      "location": "United Kingdom; Switzerland",
+      "url": "https://www.pharmiweb.jobs/job/2144807/senior-manager-r-and-d-outsourcing/",
+      "source": "Pharmiweb",
+      "posted_at": "1 day ago",
+      "scraped_at": "2026-04-19T06:45:04.965918138Z",
+      "description_snippet": null
+    }
+  ]
 }
