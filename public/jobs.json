@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-04-23T06:50:58.292736277+00:00",
+  "scraped_at": "2026-04-24T06:51:47.276148923+00:00",
   "total": 2,
   "jobs": [
     {
@@ -9,8 +9,8 @@
       "location": "United Kingdom; Switzerland",
       "url": "https://www.pharmiweb.jobs/job/2144807/senior-manager-r-and-d-outsourcing/",
       "source": "Pharmiweb",
-      "posted_at": "5 days ago",
-      "scraped_at": "2026-04-23T06:50:36.009719396Z",
+      "posted_at": "6 days ago",
+      "scraped_at": "2026-04-24T06:51:25.920647335Z",
       "description_snippet": null
     },
     {
@@ -21,7 +21,7 @@
       "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Basel-City/Global-Head---Global-Clinical-Operations--GCO----Technology---AI_REQ-10075792-1",
       "source": "Novartis (Careers)",
       "posted_at": "Posted Today",
-      "scraped_at": "2026-04-23T06:50:30.090657857Z",
+      "scraped_at": "2026-04-24T06:51:20.457687015Z",
       "description_snippet": "REQ-10075792"
     }
   ]
