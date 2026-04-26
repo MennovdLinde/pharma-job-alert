@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-04-25T06:41:32.984770047+00:00",
-  "total": 1,
+  "scraped_at": "2026-04-26T06:49:25.337315091+00:00",
+  "total": 2,
   "jobs": [
     {
       "id": "0ceb42616f8ed39b",
@@ -9,9 +9,20 @@
       "location": "United Kingdom; Switzerland",
       "url": "https://www.pharmiweb.jobs/job/2144807/senior-manager-r-and-d-outsourcing/",
       "source": "Pharmiweb",
-      "posted_at": "7 days ago",
-      "scraped_at": "2026-04-25T06:41:08.636514735Z",
+      "posted_at": "8 days ago",
+      "scraped_at": "2026-04-26T06:49:06.105052570Z",
       "description_snippet": null
+    },
+    {
+      "id": "ebd9d67e33ccdc02",
+      "title": "Global Head - Global Clinical Operations (GCO) - Technology & AI",
+      "company": "Novartis",
+      "location": "Basel (City)",
+      "url": "https://novartis.wd3.myworkdayjobs.com/Novartis_Careers/job/Basel-City/Global-Head---Global-Clinical-Operations--GCO----Technology---AI_REQ-10075792-1",
+      "source": "Novartis (Careers)",
+      "posted_at": "Posted 2 Days Ago",
+      "scraped_at": "2026-04-26T06:48:59.657879618Z",
+      "description_snippet": "REQ-10075792"
     }
   ]
 }
